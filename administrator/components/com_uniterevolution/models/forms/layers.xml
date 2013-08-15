@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form addfieldpath="/administrator/components/com_uniterevolution/models/fields">
+		
+		<fieldset name="optional" label="Optional">
+			
+			<field name="layer_caption" 
+					type="mytext"
+					label="Style"
+					description=""
+					class="textbox-caption"
+					default=""
+		    />
+		
+			<field name="layer_text" 
+					type="textarea"
+					label="Text / Html"
+					description=""
+					class="area-layer-params"
+					default=""
+		    />
+		
+			<field name="layer_image_link" 
+					type="mytext"
+					label="Image Link"
+					description=""
+					class="text-sidebar-link"
+					hidden="true"
+					hiddentype="soft"
+					default=""
+		    />
+		    
+			<field name="layer_link_open_in" 
+				  type="mylist" 
+				  default="same" 
+				  label="Link Open In"
+				  hidden="true" 
+				  hiddentype="soft"
+				  description="">
+					  <option value="same">Same Window</option>
+					  <option value="new">New Window</option>
+			</field>				
+
+			<field name="layer_animation" 
+				  type="mylist" 
+				  default="fade" 
+				  label="Animation"
+				  description="">
+					  <option value="fade">Fade</option>
+					  <option value="sft">Short from Top</option>
+					  <option value="sfb">Short from Bottom</option>
+					  <option value="sfr">Short from Right</option>
+					  <option value="sfl">Short from Left</option>
+					  <option value="lft">Long from Top</option>
+					  <option value="lfb">Long from Bottom</option>
+					  <option value="lfr">Long from Right</option>
+					  <option value="lfl">Long from Left</option>
+					  <option value="randomrotate">Random Rotate</option>
+			</field>
+
+			<field name="layer_easing" 
+				  type="mylist" 
+				  default="easeOutExpo" 
+				  label="Easing"
+				  description="">
+					  <option value="easeOutBack">easeOutBack</option>
+					  <option value="easeInQuad">easeInQuad</option>
+					  <option value="easeOutQuad">easeOutQuad</option>
+					  <option value="easeInOutQuad">easeInOutQuad</option>
+					  <option value="easeInCubic">easeInCubic</option>
+					  <option value="easeOutCubic">easeOutCubic</option>
+					  <option value="easeInOutCubic">easeInOutCubic</option>
+					  <option value="easeInQuart">easeInQuart</option>
+					  <option value="easeOutQuart">easeOutQuart</option>
+					  <option value="easeInOutQuart">easeInOutQuart</option>
+					  <option value="easeInQuint">easeInQuint</option>
+					  <option value="easeOutQuint">easeOutQuint</option>
+					  <option value="easeInOutQuint">easeInOutQuint</option>
+					  <option value="easeInSine">easeInSine</option>
+					  <option value="easeOutSine">easeOutSine</option>
+					  <option value="easeInOutSine">easeInOutSine</option>
+					  <option value="easeInExpo">easeInExpo</option>
+					  <option value="easeOutExpo">easeOutExpo</option>
+					  <option value="easeInOutExpo">easeInOutExpo</option>
+					  <option value="easeInCirc">easeInCirc</option>
+					  <option value="easeOutCirc">easeOutCirc</option>
+					  <option value="easeInOutCirc">easeInOutCirc</option>
+					  <option value="easeInElastic">easeInElastic</option>
+					  <option value="easeOutElastic">easeOutElastic</option>
+					  <option value="easeInOutElastic">easeInOutElastic</option>
+					  <option value="easeInBack">easeInBack</option>
+					  <option value="easeOutBack">easeOutBack</option>
+					  <option value="easeInOutBack">easeInOutBack</option>
+					  <option value="easeInBounce">easeInBounce</option>
+					  <option value="easeOutBounce">easeOutBounce</option>
+					  <option value="easeInOutBounce">easeInOutBounce</option>
+			</field>
+
+			<field name="layer_speed" 
+					type="mytext"
+					label="Speed"
+					class="number"
+					unit="ms"
+					description=""
+					default=""
+		    />
+
+			<field name="layer_left" 
+					type="mytext"
+					label="X"
+					class="number"
+					unit="px"
+					description=""
+					default=""
+		    />
+
+			<field name="layer_top" 
+					type="mytext"
+					label="Y"
+					class="number"
+					unit="px"
+					description=""
+					default=""
+		    />
+
+			 <field name="slide_link"
+				type="mytext"
+				label="Link To Slide"
+				description=""
+				>
+			</field>
+			
+			<field name="layer_hidden"
+					type="mycheckbox"
+					label="Hide Under Width"
+					description="Hide layer under width specified in slider settings: 'Hide Defined Layers Under Width' on 'Mobile Visibility' section."
+					default="false" ></field>				
+			
+			<field name="layer_video_autoplay"
+					type="mycheckbox"
+					label="Video Autoplay"
+					description=""
+					default="false"
+					hidden="true" ></field>
+		
+			<field name="layer_endtime" 
+					type="mytext"
+					label="End Time"
+					class="number"
+					unit="ms"
+					description=""
+					default=""
+		    />
+			
+			<field name="layer_endspeed" 
+					type="mytext"
+					label="End Speed"
+					class="number"
+					unit="ms"
+					description=""
+					default=""
+		    />
+			
+			<field name="layer_endanimation" 
+				  type="mylist"
+				  default="auto" 
+				  label="End Animation"
+				  description="">
+					  <option value="auto">Choose Automatic</option>
+					  <option value="fadeout">Fade Out</option>
+					  <option value="stt">Short to Top</option>
+					  <option value="stb">Short to Bottom</option>
+					  <option value="stl">Short to Left</option>
+					  <option value="str">Short to Right</option>
+					  <option value="ltt">Long to Top</option>
+					  <option value="ltb">Long to Bottom</option>
+					  <option value="ltl">Long to Left</option>
+					  <option value="ltr">Long to Right</option>
+					  <option value="randomrotateout">Random Rotate Out</option>
+			</field>
+			
+			<field name="layer_endeasing" 
+				  type="mylist"
+				  default="nothing"
+				  label="End Easing"
+				  description="">
+					  <option value="nothing">No Change</option>
+					  <option value="easeOutBack">easeOutBack</option>
+					  <option value="easeInQuad">easeInQuad</option>
+					  <option value="easeOutQuad">easeOutQuad</option>
+					  <option value="easeInOutQuad">easeInOutQuad</option>
+					  <option value="easeInCubic">easeInCubic</option>
+					  <option value="easeOutCubic">easeOutCubic</option>
+					  <option value="easeInOutCubic">easeInOutCubic</option>
+					  <option value="easeInQuart">easeInQuart</option>
+					  <option value="easeOutQuart">easeOutQuart</option>
+					  <option value="easeInOutQuart">easeInOutQuart</option>
+					  <option value="easeInQuint">easeInQuint</option>
+					  <option value="easeOutQuint">easeOutQuint</option>
+					  <option value="easeInOutQuint">easeInOutQuint</option>
+					  <option value="easeInSine">easeInSine</option>
+					  <option value="easeOutSine">easeOutSine</option>
+					  <option value="easeInOutSine">easeInOutSine</option>
+					  <option value="easeInExpo">easeInExpo</option>
+					  <option value="easeOutExpo">easeOutExpo</option>
+					  <option value="easeInOutExpo">easeInOutExpo</option>
+					  <option value="easeInCirc">easeInCirc</option>
+					  <option value="easeOutCirc">easeOutCirc</option>
+					  <option value="easeInOutCirc">easeInOutCirc</option>
+					  <option value="easeInElastic">easeInElastic</option>
+					  <option value="easeOutElastic">easeOutElastic</option>
+					  <option value="easeInOutElastic">easeInOutElastic</option>
+					  <option value="easeInBack">easeInBack</option>
+					  <option value="easeOutBack">easeOutBack</option>
+					  <option value="easeInOutBack">easeInOutBack</option>
+					  <option value="easeInBounce">easeInBounce</option>
+					  <option value="easeOutBounce">easeOutBounce</option>
+					  <option value="easeInOutBounce">easeInOutBounce</option>
+			</field>
+			
+		</fieldset>		
+			
+</form>

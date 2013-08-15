@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="2.5" method="upgrade">
+    <name>VirtueMart Wishlist Stats Module</name>
+	<author>2KWeb Solutions</author>
+    <creationDate>March 2012</creationDate>    
+    <copyright>(C) 2KWeb 2012 - All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+    <authorEmail>support@vmwishlist.com</authorEmail>
+    <authorUrl>http://www.vmwishlist.com</authorUrl>
+    <version>3.2</version>
+    <description>This Module will show Wishlists and Products Statistics</description>
+     <files>
+         <filename module="mod_virtuemart_wishlist_stats">mod_virtuemart_wishlist_stats.php</filename>
+		 <filename module="mod_virtuemart_wishlist_stats">mod_virtuemart_wishlist_stats.xml</filename>
+		 <filename>index.html</filename>
+         <filename>helper.php</filename>
+         <filename>tmpl/default.php</filename>
+         <filename>tmpl/index.html</filename>
+     </files>
+	 <languages>
+			<language tag="en-GB">en-GB.mod_virtuemart_wishlist_stats.ini</language>
+	</languages>
+     <config>
+		<fields name="params">
+			<fieldset name="basic">
+					<field name="prodlike_enabled" type="radio" default="1" label="Enable Favorite Likes Stats" description="Select Yes if you want to enable Statistics for Favorite Products">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+					<field name="prodstat_enabled" type="radio" default="1" label="Enable Product Stats" description="Select Yes if you want to enable Statistics for Products">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+					<field name="favstat_enabled" type="radio" default="1" label="Enable Favorite List Stats" description="Select Yes if you want to enable Statistics for Favorite Lists">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+					<field name="sharestat_enabled" type="radio" default="1" label="Enable Shared List Stats" description="Select Yes if you want to enable Statistics for Shared Lists">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+					<field name="wishstat_enabled" type="radio" default="1" label="Enable WIshList Stats" description="Select Yes if you want to enable Statistics for WishLists">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+					<field name="num_prodstat" type="text" default="10" label="Number of Products to Display" description="Here you can define the number of Favorites Products to display in the module (Default 10 is for Top 10 Favorite Products." />
+					<field name="cache" type="text" default="0" label="Set Cache Timeout" description="Here you can set the Cache Timeout for the module (in seconds). Set to zero if you want to disable it" />
+					<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Here you can apply a specific class suffix for this module (table.moduletable), custom module styling are allowed" />
+					<field name="class_sfx" type="text" default="" label="Menu Class Suffix" description="Here you can apply a specific class suffix for the menu items" />
+     		</fieldset>
+		</fields>
+	</config>
+</install>

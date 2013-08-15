@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	
+	<fieldset name="general">
+		
+		<field name="title"
+			type="mytext"
+			label="JGLOBAL_TITLE"
+			description="COM_UNITEREVOLUTION_TITLE_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		
+		<field id="published"
+			name="published"
+			type="list"
+			label="COM_UNITEREVOLUTION_STATE"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>			
+		</field>
+		
+		<field name="id"
+			type="mytext"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+			
+	</fieldset>
+	
+	
+	<!-- ======================== Slider Params ============================= -->
+	
+		<fields name="params" >
+		
+			<fieldset name="slider_params" label="Slider Parameters" addfieldpath="/administrator/components/com_uniterevolution/models/fields">
+			
+					<field name="slider_type" 
+						   type="myradio"
+						   default="fixed" 
+						   label="Slider Type"
+						   class="radio_wide" 
+						   description="">
+							  <option value="fixed">Fixed</option>
+							  <option value="responsitive">Responsive</option>
+							  <option value="fullwidth">Full Width</option>
+					</field>
+					
+					<field name="slider_width"
+						   type="mytext"
+						   default="960"
+						   label="Width" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+								
+					<field name="slider_height"
+						   type="mytext"
+						   default="350"
+						   label="Height"
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_w1"
+						   type="mytext"
+						   default="940"
+						   label="Screen Width1" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_sw1"
+						   type="mytext"
+						   default="770"
+						   label="Slider Width1" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_w2"
+						   type="mytext"
+						   default="780"
+						   label="Screen Width2" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_sw2"
+						   type="mytext"
+						   default="500"
+						   label="Slider Width2" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_w3"
+						   type="mytext"
+						   default="510"
+						   label="Screen Width3" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_sw3"
+						   type="mytext"
+						   default="310"
+						   label="Slider Width3" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_w4"
+						   type="mytext"
+						   default=""
+						   label="Screen Width4" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_sw4"
+						   type="mytext"
+						   default=""
+						   label="Slider Width4" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+					
+					<field name="responsitive_w5"
+						   type="mytext"
+						   default=""
+						   label="Screen Width5" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_sw5"
+						   type="mytext"
+						   default=""
+						   label="Slider Width5" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+					
+					<field name="responsitive_w6"
+						   type="mytext"
+						   default=""
+						   label="Screen Width6" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+		
+					<field name="responsitive_sw6"
+						   type="mytext"
+						   default=""
+						   label="Slider Width6" 
+						   class="number"
+						   unit="px"
+						   description="">
+					</field>
+					
+					
+					<field type="control"
+						   ctype="enable"
+						   parent="slider_type"
+						   value="responsitive"
+						   child="responsitive_w1,responsitive_w2,responsitive_w3,responsitive_w4,responsitive_w5,responsitive_w6,responsitive_sw1,responsitive_sw2,responsitive_sw3,responsitive_sw4,responsitive_sw5,responsitive_sw6"
+					 ></field>
+			</fieldset>
+		
+			<fieldset name="general_settings" label="General">
+
+				<field name="delay"
+					   type="mytext" 
+					   default="9000"
+					   label="Delay" 
+					   description="The time one slide stays on the screen in Milliseconds">
+				</field>
+				
+				<field name="touchenabled" 
+					   type="myradio" 
+					   default="on" 
+					   label="Touch Enabled" 
+					   description="Enable Swipe Function on touch devices">
+						  <option value="on">On</option>
+						  <option value="off">Off</option>
+				</field>
+
+				<field name="stop_on_hover" 
+					   type="myradio" 
+					   default="on" 
+					   label="Stop On Hover" 
+					   description="Stop the Timer when hovering the slider">
+						  <option value="on">On</option>
+						  <option value="off">Off</option>
+				</field>
+				
+				<field name="shuffle" 
+					   type="myradio" 
+					   default="off" 
+					   label="Shuffle Mode" 
+					   description="Turn Shuffle Mode on and off! Will be randomized only once at the start.">
+						  <option value="on">On</option>
+						  <option value="off">Off</option>
+				</field>
+				
+				<field name="php_resize"
+					   type="myradio" 
+					   default="off" 
+					   label="PHP Image Resize / Crop" 
+					   description="Choose this option in order to resize / crop the slide images to the exact size with php.">
+						  <option value="on">On</option>
+						  <option value="off">Off</option>
+				</field>
+
+				<field type="spacer" hr="true" />
+
+				<field name="load_googlefont" 
+					   type="myradio"
+					   default="false" 
+					   label="Load Google Font" 
+					   description="yes / no to load google font">
+						  <option value="true">Yes</option>
+						  <option value="false">No</option>
+				</field>
+								
+				<field name="google_font" 
+					   type="mytext"
+					   label="Google Font"
+					   class="text-sidebar-long"
+					   default="PT+Sans+Narrow:400,700"
+					   description="The google font family to load"></field>
+				
+				<field type="control"
+					   ctype="enable"
+					   parent="load_googlefont"
+					   child="google_font"
+					   value="true"
+				   ></field>
+
+			    
+				<field type="spacer" hr="true" />
+				
+				<field name="stop_slider" 
+					   type="myradio" 
+					   default="off" 
+					   label="Stop Slider" 
+					   description="On / Off to stop slider after some amount of loops / slides">
+						  <option value="on">On</option>
+						  <option value="off">Off</option>
+				</field>
+				
+				<field name="stop_after_loops"
+					   type="mytext" 
+					   default="0"
+					   label="Stop After Loops" 
+					   class="number" 
+					   description="Stop the slider after certain amount of loops. 0 related to the first loop.">
+				</field>
+				
+				<field name="stop_at_slide"
+					   type="mytext" 
+					   default="2"
+					   class="number"
+					   label="Stop At Slide" 
+					   description="Stop the slider at the given slide">
+				</field>
+				
+				<field type="control"
+					   ctype="enable"
+					   parent="stop_slider"
+					   child="stop_after_loops,stop_at_slide"
+					   value="on"
+				   ></field>				   
+				
+			</fieldset>	
+			
+			<fieldset name="position" label="Position">
+			
+				<field name="position" 
+					   type="list" 
+					   default="center"
+					   label="Position on the page" 
+					   description="The position of the slider on the page, (float:left, float:right, margin:0px auto;)">
+						  <option value="left">Left</option>
+						  <option value="center">Center</option>
+						  <option value="right">Right</option>
+				</field>
+
+				<field name="margin_top" 
+					   type="mytext"
+					   label="Margin Top"
+					   class="number"
+					   default="0"
+					   unit="px"
+					   description="The top margin of the slider wrapper div"></field>
+				
+				<field name="margin_bottom" 
+					   type="mytext"
+					   label="Margin Bottom"
+					   default="0"
+					   class="number"
+					   unit="px"
+					   description="The bottom margin of the slider wrapper div"></field>
+				
+				<field name="margin_left" 
+					   type="mytext"
+					   label="Margin Left"
+					   default="0"
+					   class="number"
+					   unit="px"
+					   description="The left margin of the slider wrapper div"></field>
+					   
+				<field name="margin_right" 
+					   type="mytext"
+					   label="Margin Right"
+					   default="0"
+					   class="number"
+					   unit="px"
+					   description="The right margin of the slider wrapper div"></field>
+					   
+				<field type="control"
+					   ctype="disable"
+					   parent="position"
+					   child="margin_left,margin_right"
+					   value="center"></field>
+				
+				<field name="clear_both"
+					   type="myradio"
+					   label="Add Clear Both"
+					   description="Add clear:both div to the end of the slider html. It removes the floating position. "
+					   default="false">
+					<option value="true">Yes</option>
+					<option value="false">No</option>
+				</field>
+				
+			</fieldset> <!--  Position -->
+			
+			
+			<fieldset name="appearance" label="Appearance">
+				
+				<field name="shadow_type" 
+					   type="list" 
+					   default="2"
+					   label="Shadow Type" 
+					   description="The Shadow display underneath the banner. The shadow apply to fixed and responsive modes only, the full width slider don't have a shadow.">
+						  <option value="0">No Shadow</option>
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+				</field>
+				
+				<field name="show_timerbar"
+					   type="myradio" 
+					   default="true" 
+					   label="Show Timer Line" 
+					   description="Show the top running timer line">
+						  <option value="true" >Show</option>
+						  <option value="false" >Hide</option>
+				</field>
+
+				<field name="timebar_position"
+					   type="myradio" 
+					   default="top" 
+					   label="Timer Line Position" 
+					   description="Set the timer line position to top or bottom">
+						  <option value="top">Top</option>
+						  <option value="bottom">Bottom</option>
+				</field>
+
+				<field type="control"
+					   ctype="enable"
+					   parent="show_timerbar"
+					   child="timebar_position"
+					   value="true"
+				 ></field>
+
+				<field name="background_color"
+					   type="colorpicker"
+					   default="#E9E9E9" 
+					   label="Background color" 
+					   description="Slider wrapper div background color, for transparent slider, leave empty.">
+				</field>
+
+				<field name="padding"
+					   type="mytext"
+					   default="5"
+					   class="number"
+					   unit="px"
+					   label="Padding (border)" 
+					   description="The wrapper div padding, if it has value, then together with background color it it will make border around the slider.">
+				</field>
+
+				<field name="show_background_image"
+					   type="myradio" 
+					   default="false" 
+					   label="Show Background Image" 
+					   description="yes / no to put background image to the main slider wrapper.">
+						  <option value="true" >Yes</option>
+						  <option value="false" >No</option>
+				</field>
+
+				<field name="background_image"
+					   type="media"
+					   default=""
+					   label="Background Image Url"
+					   class="text-sidebar-long" 
+					   description="The background image that will be on the slider wrapper. Will be shown at slider preloading.">
+				</field>
+				
+				<field type="control"
+					   ctype="enable"
+					   parent="show_background_image"
+					   child="background_image"
+					   value="true"
+			    ></field>
+			     
+			</fieldset>
+				
+			<!-- end apperance -->
+			
+			<fieldset name="navigation" label="Navigation">
+				
+				<field name="navigaion_type" 
+					   type="list"
+					   default="none" 
+					   label="Navigation Type" 
+					   description="Display type of the navigation bar (Default:none)">
+						  <option value="none">None</option>
+						  <option value="bullet">Bullet</option>
+						  <option value="thumb">Thumb</option>
+						  <option value="both">Both</option>
+				</field>
+
+				<field name="navigation_arrows" 
+					   type="list" 
+					   default="verticalcentered" 
+					   label="Navigation Arrows" 
+					   description="Display position of the Navigation Arrows (** By navigation Type Thumb arrows always centered or none visible)">
+						  <option value="nexttobullets">Next To Bullets</option>
+						  <option value="verticalcentered">Vertical Centered</option>
+						  <option value="none">None</option>
+				</field>
+
+				<field name="navigation_style" 
+					   type="list" 
+					   default="round" 
+					   label="Navigation Style" 
+					   description="Look of the navigation bullets  ** If you choose navbar, we recommend to choose Navigation Arrows to nexttobullets">
+						  <option value="round">Round</option>
+						  <option value="navbar">Navbar</option>					   
+						  <option value="round-old">Old Round</option>
+						  <option value="square-old">Old Square</option>
+						  <option value="navbar-old">Old Navbar</option>
+				</field>
+				
+				<field name="nav_offset_hor" 
+					   type="mytext" 
+					   label="Nav. Offset Horizontal"
+					   class="number"
+					   default="0"
+					   unit="px" 
+					   description="The Bar is centered but could be moved this pixel count left(e.g. -10) or right (Default: 0)  ** By resizing the banner, it will be always centered !!"></field>	
+
+				<field name="nav_offset_vert" 
+					   type="mytext"
+					   label="Nav. Offset Vertical"
+					   class="number"
+					   default="20"
+					   unit="px" 
+					   description="The Bar is bound to the bottom but could be moved this pixel count up (e. g. -20) or down (Default: 20)"></field>
+				
+				<field name="navigaion_always_on" 
+					   type="mylist" 
+					   default="false"
+					   label="Always Show Navigation" 
+					   description="Always show the navigation and the thumbnails.">
+						  <option value="true">Yes</option>
+						  <option value="false">No</option>						
+				</field>
+				
+				<field name="hide_thumbs" 
+					   type="mytext"  
+					   label="Hide Navitagion After"
+					   default="200"
+					   unit="ms" 
+					   class="number"
+					   description="Time after that the Navigation and the Thumbs will be hidden(Default: 200 ms)"></field>
+				
+				<field type="control"
+					   ctype="enable"
+					   parent="navigaion_always_on"
+					   child="hide_thumbs"
+					   value="false"
+				 ></field>
+				
+			</fieldset>
+				
+			<!-- end navigation -->
+			
+			<!-- start tuhmbnails -->
+			
+			<fieldset name="thumbs" label="Thumbnails">
+			
+				<field name="thumb_width" 
+					   type="mytext"  
+					   label="Thumb Width"
+					   class="number"
+					   default="100"
+					   unit="px"
+					   description="The basic Width of one Thumbnail (only if thumb is selected)"></field>
+
+				<field name="thumb_height" 
+					   type="mytext"  
+					   label="Thumb Height"
+					   default="50"
+					   class="number"
+					   unit="px"
+					   description="the basic Height of one Thumbnail (only if thumb is selected)"></field>
+					   
+				<field name="thumb_amount" 
+					   type="mytext"
+					   label="Thumb Amount"
+					   default="5"
+					   class="number"
+					   unit="px"
+					   description="the amount of the Thumbs visible same time (only if thumb is selected)"></field>
+				
+			</fieldset>
+			
+			<!-- end tuhmbnails -->
+			
+			<!-- end advanced -->
+			
+			<fieldset name="mobile_visibility" label="Mobile Visibility">
+				
+				<field name="hide_slider_under"
+					   type="mytext"
+					   label="Hide Slider Under Width"
+					   default="0"
+					   class="number"
+					   unit="px"
+					   description="Hide the slider under some slider width. Works only in Responsive Style. Not available for Fullwidth."></field>
+
+				<field name="hide_defined_layers_under"
+					   type="mytext"
+					   label="Hide Defined Layers Under Width"
+					   default="0"
+					   class="number"
+					   unit="px"
+					   description="Hide some defined layers in the layer properties under some slider width."></field>
+
+				<field name="hide_all_layers_under"
+					   type="mytext"
+					   label="Hide All Layers Under Width"
+					   default="0"
+					   class="number"
+					   unit="px"
+					   description="Hide all layers under some slider width"></field>
+				
+			</fieldset>
+			
+			<!-- end advanced -->
+			
+	</fields>
+
+</form>

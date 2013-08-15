@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+<!--Ну здесь я думаю и так понятно-->
+        <name>mod_vm_filter</name>
+        <author>mod_vm_filter</author>
+<!--Дата создания модуля-->
+        <creationDate>2012-02-17</creationDate>>
+        <copyright>mod_vm_filter</copyright>
+<!--Лицензия модуля-->
+        <license>GPL 2.0</license>
+<!--e-mail автора-->
+        <authorEmail>mod_vm_filter@mod_vm_filter.com </authorEmail>
+<!--Сайт автора-->
+        <authorUrl>www.mod_vm_filter.com</authorUrl>
+<!--Версия модуля-->
+        <version>1.0</version>
+        <description>mod_vm_filter</description>
+
+<!--Описываем какие файлы присутствуют в модуле-->
+<!--Вместо тега filename можно вставить folder, т.е. папки которые есть в модуле, что облегчает описание содержимого, потому что не нужно описывать каждый файл-->
+                <filename module="mod_my">mod_vm_filter.php</filename>
+                <filename>index.html</filename>
+                <filename>helper.php</filename>
+                <filename>tmpl/default.php</filename>
+                <filename>tmpl/index.html</filename>
+        </files>
+<!--Подключение языков-->
+<languages>
+<language tag="en-GB">language/en-GB/en-GB.mod_name.ini</language>
+<language tag="ru-RU">language/ru-RU/ru-RU.mod_name.ini</language> 
+    </languages>
+<!--Параметры модуля, которые буду отображаться в административной панели, на странице изменения параметров модуля-->
+<config> 
+        <fields name="params">> 
+            <fieldset name="basic"> <!--Основные параметры, буду описывать только их-->
+<field
+              name="name" <!--Имя параметра, которое мы будем передавать в php файл -->
+              type="text" <!--Тип параметра, в данном случае текстовое поле -->
+              label="NAME" <!-- Метка поля, название параметра -->
+              description="DESCRIPTION_NAME" /> <!-- Подробное описание параметра, открывется в всплывающем окне при наведении на метку поля -->
+        </fields>
+            </fieldset>
+</config>
+</install>

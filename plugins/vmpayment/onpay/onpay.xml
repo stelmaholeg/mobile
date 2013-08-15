@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>VMPAYMENT_ONPAY</name>
+    <creationDate>February 2012</creationDate>
+    <author>Stepanov Maksim, Mediaceh</author>
+    <authorUrl>http://www.mediaceh.com</authorUrl>
+    <copyright>Copyright (C) 2012 Stepanov Maksim, Mediaceh. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.1.0</version>
+    <description>Onpay payment plugin</description>
+    <languages>
+	<language tag="ru-RU">ru-RU.plg_vmpayment_onpay.ini</language>
+	<language tag="en-GB">en-GB.plg_vmpayment_onpay.ini</language>
+    </languages>
+    <files>
+	<filename plugin="standard">onpay.php</filename>
+	<filename plugin="standard">onpay_notify.php</filename>
+    </files>
+    
+	
+	<params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	 <param name="ONPAY_LOGIN" type="text"  label="VMPAYMENT_ONPAY_ONPAY_LOGIN" description="VMPAYMENT_ONPAY_ONPAY_LOGIN_EXPLAIN" />
+	<param name="ONPAY_SECRET_KEY" type="text"  label="VMPAYMENT_ONPAY_ONPAY_SECRET_KEY" description="VMPAYMENT_ONPAY_ONPAY_SECRET_KEY_EXPLAIN" />
+	<param name="ONPAY_ADD_PARAMS" type="text"  label="VMPAYMENT_ONPAY_ONPAY_ADD_PARAMS" description="VMPAYMENT_ONPAY_ONPAY_ADD_PARAMS_EXPLAIN" />
+	<field name="status_pending" type="vmorderstate" scope="com_virtuemart" default="P" label="VMPAYMENT_ONPAY_STATUS_PENDING" description="VMPAYMENT_ONPAY_STATUS_PENDING_EXPLAIN" />
+	<field name="status_success" type="vmorderstate" scope="com_virtuemart" default="C" label="VMPAYMENT_ONPAY_STATUS_SUCCESS" description="VMPAYMENT_ONPAY_STATUS_SUCCESS_EXPLAIN" />
+	<field name="status_canceled" type="vmorderstate" scope="com_virtuemart" default="X" label="VMPAYMENT_ONPAY_STATUS_FAILED" description="VMPAYMENT_ONPAY_STATUS_FAILED_EXPLAIN" />
+	<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_ONPAY_LOGOS"
+		description="VMPAYMENT_ONPAY_LOGOS_EXPLAIN"
+		directory="/images/stories/virtuemart/payment"
+		default="default" hide_default="1" hide_none="1"
+		stripext="0"   exclude="^_" />
+	<param name="countries" type="vmcountries"  scope="com_virtuemart" default="" label="VMPAYMENT_ONPAY_COUNTRIES" description="VMPAYMENT_ONPAY_COUNTRIES_EXPLAIN"/>
+        <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_ONPAY_CURRENCY" description="VMPAYMENT_ONPAY_CURRENCY_EXPLAIN" />
+
+	<param name="min_amount" type="text"  label="VMPAYMENT_ONPAY_MIN_AMOUNT" description="VMPAYMENT_ONPAY_MIN_AMOUNT_EXPLAIN" />
+	<param name="max_amount" type="text"  label="VMPAYMENT_ONPAY_MAX_AMOUNT" description="VMPAYMENT_ONPAY_MAX_AMOUNT_EXPLAIN" />
+	<param name="cost_per_transaction" type="text"  label="VMPAYMENT_ONPAY_COST_PER_TRANSACTION" description="VMPAYMENT_ONPAY_COST_PER_TRANSACTION_EXPLAIN" />
+	<param name="cost_percent_total" type="text"  label="VMPAYMENT_ONPAY_COST_PERCENT_TOTAL" description="VMPAYMENT_ONPAY_COST_PERCENT_TOTAL_EXPLAIN" />
+	<param name="tax_id" type="vmtaxes" scope="com_virtuemart"  label="VMPAYMENT_ONPAY_TAX" description="VMPAYMENT_ONPAY_TAX_EXPLAIN" />
+   
+	</params>
+
+
+
+</install>

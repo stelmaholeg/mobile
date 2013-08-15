@@ -1,0 +1,9 @@
+DirectoryIndex index.php
+
+# by reg.ru support team
+<Files index.php>
+AuthType Basic
+AuthName "please use your Plesk and password"
+AuthUserFile "/var/www/vhosts/u3622112.plsk.regruhosting.ru/etc/users"
+Require valid-user
+</Files>

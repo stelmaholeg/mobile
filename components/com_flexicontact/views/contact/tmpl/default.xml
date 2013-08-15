@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+
+<layout title="COM_FLEXICONTACT_VIEW_TITLE_CONTACT">
+	<message>
+	</message>
+</layout>
+
+<state>
+	<name>COM_FLEXICONTACT_VIEW_TITLE_CONTACT</name>
+	
+	<description></description>
+
+<!-- Joomla 1.6 version -->
+	
+<config><fields name="params"><fieldset name="basic">
+	<field name="toPrimary" type="text" size="40" default="" label="COM_FLEXICONTACT_V_EMAIL_TO" description="" />
+	<field name="ccAddress" type="text" size="40" default="" label="COM_FLEXICONTACT_V_EMAIL_CC" description="" />
+	<field name="bccAddress" type="text" size="40" default="" label="COM_FLEXICONTACT_V_EMAIL_BCC" description="" />
+	
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+
+	<field name="@spacer" type="spacer" default="" label="" description="" />
+
+	<field name="num_images" type="text" size="5" default="0" label="COM_FLEXICONTACT_V_CAPTCHA_NUMBER" description="COM_FLEXICONTACT_V_CAPTCHA_DESC" />
+	<field name="magic_word" type="text" size="30" default="" label="COM_FLEXICONTACT_V_MAGIC_WORD" description="COM_FLEXICONTACT_V_MAGIC_WORD_DESC" />
+
+	<field name="page_hdr" type="text" size="40" default="" label="COM_FLEXICONTACT_V_PAGE_TITLE" description="" />
+</fieldset></fields></config>
+
+<!-- Joomla 1.5 version -->
+
+<params>
+	<param name="toPrimary" type="text" size="40" default="" label="COM_FLEXICONTACT_V_EMAIL_TO" description="" />
+	<param name="ccAddress" type="text" size="40" default="" label="COM_FLEXICONTACT_V_EMAIL_CC" description="" />
+	<param name="bccAddress" type="text" size="40" default="" label="COM_FLEXICONTACT_V_EMAIL_BCC" description="" />
+	
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="num_images" type="text" size="5" default="0" label="COM_FLEXICONTACT_V_CAPTCHA_NUMBER" description="COM_FLEXICONTACT_V_CAPTCHA_DESC" />
+	<param name="magic_word" type="text" size="30" default="" label="COM_FLEXICONTACT_V_MAGIC_WORD" description="COM_FLEXICONTACT_V_MAGIC_WORD_DESC" />
+
+	<param name="@spacer" type="spacer" default="" label="" description="" />
+
+	<param name="page_hdr" type="text" size="40" default="" label="COM_FLEXICONTACT_V_PAGE_TITLE" description="" />
+</params>
+
+</state>
+
+</metadata>

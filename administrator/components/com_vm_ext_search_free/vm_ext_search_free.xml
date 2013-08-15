@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+    <name>vm_ext_search_free</name>
+    <creationDate>27.05.2010</creationDate>
+    <author>Arkadiy, Morph</author>
+    <copyright>Copyright2010 by Arkadiy, Morph.</copyright>
+    <authorEmail></authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.4.4</version>
+    <administration>
+        <menu>VM TYPE SEEARH FREE</menu>
+        <files>
+            <filename>admin.vm_ext_search_free.php</filename>
+            <filename>config.php</filename>
+            <filename>toolbar.vm_ext_search_free.php</filename>
+            <filename>toolbar.vm_ext_search_free.html.php</filename>
+            <filename>vm_ext_search_free.xml</filename>
+        </files>
+    </administration>
+    <files>
+        <filename>index.html</filename>
+        <filename>vm_ext_search_free.php</filename>
+        <filename>css/index.html</filename>
+        <filename>css/style.css</filename>
+        <filename>files/index.html</filename>
+        <filename>files/com_helper.php</filename>
+        <filename>files/mod_helper.php</filename>
+        <filename>files/pageNavigation.php</filename>
+        <filename>files/unisearch.php</filename>
+        <filename>files/vm_ext_search_helper.php</filename>
+        <filename>img/index.html</filename>
+        <filename>img/spinner.gif</filename>
+        <filename>js/index.html</filename>
+        <filename>js/jquery-1.4.2.min.js</filename>
+        <filename>js/jquery.form.js</filename>
+        <filename>js/universal_search.js</filename>
+    </files>
+</install>

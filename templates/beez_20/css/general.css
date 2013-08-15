@@ -1,0 +1,77 @@
+/* not ready */
+/* -- form validation */
+.invalid{border-color:#ff0000}
+label.invalid{color:#ff0000}
+/* -- buttons */
+#editor-xtd-buttons{padding:0}
+.button2-left,.button2-right,.button2-left div,.button2-right div,.button2-left a,.button2-right a,.button2-left span,.button2-right span,.button2-left,.button2-right,.img_caption .left,div.tooltip,.news-block{float:left}
+.button2-left a,.button2-right a,.button2-left span,.button2-right span{display:block;color:#666;cursor:pointer}
+.button2-left span,.button2-right span{cursor:default;color:#999}
+.button2-left .page a,.button2-right .page a,.button2-left .page span,.button2-right .page span{padding:0 6px}
+.page span,div.tooltip h4,#system-message dt,#system-message dd,.news-switcher h3,.news-materials h3{font-weight:bold}
+.page span{color:#000}
+.button2-left a:hover,.button2-right a:hover{text-decoration:none;color:#0B55C4}
+.button2-left a,.button2-left span{padding:0 24px 0 6px}
+.button2-right a,.button2-right span{padding:0 6px 0 24px}
+.button2-left,.button2-right{margin-left:5px}
+.button2-left .image{}
+.button2-left .readmore{}
+.button2-left .pagebreak{}
+/* Tooltips */
+div.tooltip{background:#ffc;border:1px solid #D4D5AA;padding:5px;max-width:200px}
+div.tooltip h4{font-size:95%;margin-top:-15px;padding-top:15px;padding-bottom:5px}
+div.tooltip p{font-size:90%;margin:0}
+/* Caption fixes */
+.img_caption .left{margin-right:1em}
+.img_caption .right{float:right;margin-left:1em}
+.img_caption .left p{clear:left;text-align:center}
+.img_caption .right p{clear:right;text-align:center}
+.img_caption{text-align:center!important}
+.img_caption.none{margin-left:auto;margin-right:auto}
+/* Calendar */
+a img.calendar{width:16px;height:16px;margin-left:3px;cursor:pointer;vertical-align:middle}
+/* System Messages */
+.error{padding:0;margin-bottom:20px}
+.error h2{color:#000 !important;font-size:1.4em !important;text-transform:uppercase;padding:0 0 0 0px !important}
+#system-message{margin:10px 0 20px 0;border-left:0;border-right:0}
+#system-message dd{margin:0 0 15px 0;text-indent:0;padding:0}
+#system-message dd ul{color:#000;list-style:none;padding:0}
+#system-message dd ul li{line-height:1.5em}
+/* System Standard Messages */
+#system-message dt.message{position:absolute;top:-2000px;left:-3000px}
+#system-message dd.message  ul{background:#fff  url(../images/system/notice-info.png) no-repeat;padding-left:40px;padding:10px 10px 10px 40px;border-top:2px solid #90B203;border-bottom:2px solid #90B203}
+#system-message dd.message ul li{background:none !important}
+/* System Error Messages */
+#system-message dt.error{position:absolute;top:-2000px;left:-3000px}
+#system-message dd.error ul{background:#fff url(../images/system/notice-alert.png) no-repeat;padding:10px 10px 10px 40px;border-top:2px solid #990000;border-bottom:2px solid #990000}
+/* System Notice Messages */
+#system-message dt.notice{position:absolute;top:-2000px;left:-3000px}
+#system-message dd.notice  ul{background:#fff url(../images/system/notice-note.png) no-repeat;padding:10px 10px 10px 40px;border-top:2px solid #FAA528;border-bottom:2px solid #FAA528}
+#system-message dd.notice ul{color:#000;margin:10px 0}
+#system-message{margin-bottom:0;padding:0}
+#system-message dd{padding:0}
+.vmCartHoverer p,.header-menu div{margin:0;padding:0;font-family:'Didact Gothic',sans-serif;font-size:15px;color:#000;margin-top:-11px}
+.logoheader h1{z-index:1}
+.header-menu{z-index:10}
+.top-logo,.top-logo h1{width:255px}
+a.show-registr-form:hover,a.show-login-form:hover{color:#000;text-decoration:underline}
+.search input[type="text"]{font-family:'Prosto One',cursive !important;font-size:11px !important;border:solid 1px black;border-radius:3px;height:12px !important}
+.search input[type="image"]{position:absolute;width:13px !important;height:13px !important;text-indent:-9999px;margin-left:-18px !important;margin-top:2px !important;background:none !important;border-left:none !important;background:url(../images/refresh.png) no-repeat 2px 2px #F7F7F7 !important;border-radius:0 3px 3px 0}
+.search input[type="text"]:focus{outline:none !important;border-bottom:solid 1px grey}
+.module_content{border:none !important}
+.header-menu *{z-index:9999 !important}
+#footer h2{font-family:'Ubuntu',sans-serif;font-size:12px}
+#footer ul.menu{font-family:'Ubuntu',sans-serif;font-size:11px}
+.blog-featured{display:none}
+.news-switcher h3,.news-materials h3{font-family:'Didact Gothic',sans-serif;font-size:17px;padding-bottom:5px;margin-bottom:15px;border-bottom:solid 1px #CCC}
+.news-switcher h3{margin-left:10px}
+.news-materials{font-family:'Ubuntu',sans-serif}
+.news-switcher li{border:none !important;font-family:'Ubuntu',sans-serif}
+.news-switcher li:hover{background:#EEE}
+.show-news{cursor:pointer;padding-left:10px !important}
+.news-block{width:660px;text-align:justify}
+.navigation-container-custom{z-index:50}
+.navigation-container-custom img{cursor:pointer}
+.category-modulearticles-1 li a:link,.category-modulearticles-1 li a:hover,.category-modulearticles-1 li a:visited,.category-modulearticles-1 li a{color:#000;text-decoration:underline;font-size:10px}
+.category-modulearticles-1 li a:hover{text-decoration:none;font-size:10px;color:#000}
+#poll_vote_1 label{cursor:pointer}

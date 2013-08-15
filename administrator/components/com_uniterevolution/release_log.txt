@@ -1,0 +1,57 @@
+version 2.0
+
+- added all updated from the wordpress version.
+
+version 1.5.3
+
+- fixed some bug in js when set boxslide effect to first slide.
+
+version 1.5.2
+
+- updated to the new plugin version.
+- fixed the onhover stop functionality
+- updated the navigation images
+
+version 1.5.1
+
+- bug fix: Fixed strict php type bugs
+- bug fix: Timer was not appearing at the bottom.
+- protection: remove the captions.css from the initial install, and copy it on the first run. That way the captions.css won't be deleted on update.
+
+version 1.5
+
+- feature: added slider setting: "arrows always on"
+- feature: added slider setting:  "timer bar position" 
+- feature: new animation library (transition.js) has been added
+- feature: new transitions added - premium 3D transitions and Custom Transitions.
+- feature: shuffle mode  shuffle:"on/off" to randomize the list elements at start
+- feature: API with function like next, prev, maxslide, pause,resume, show, event handling (event name : revolution.slide.changed  data.slideIndex = new slide index)
+- feature: added slide transition rotation to slide options.
+- feature: added "randomrotate" caption transition
+- feature: added slide link target - new or same window
+- feature: added 2 more responsive layers (5,6)
+- feature: Full Width video support for youtube and vimeo
+- feature: The layers are selected after add
+- feature: Added export / import slider functionality
+
+version 1.4.4
+
+- bug fix: All the image url's are saved now as relative path's
+- bug fix: Fixed bottom link to unitecms website, and some misspells
+
+version 1.4.3
+
+- done all preperations for submitting to JED
+
+version 1.4.2
+
+bug fix: moved the plugin to the media folder
+bug fix: moved the default slide image to media folder
+
+version 1.4.2
+
+- streight line with the wordpress version
+
+version 1.0  
+
+the first revolution slider release!

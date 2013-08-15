@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <p>
+        ИП Абраменко А.Д. <br/>
+        Российская Федерация, Ставропольский край, г.Ставрополь<br/>
+        Торговля цифровой техникой<br/>
+        тел.: +7(962)440-80-04<br/>
+        <a href="http://mobile26.net">http://mobile26.net</a><br/>
+        info@mobile26.net<br/>
+        Информационный центр: +7(988)10-40-222<br/>
+        Абраменко Александр Даутович<br/>
+    </p>
+    <p>
+        <hr/>
+        <br/>
+        <strong class="didact" style="font-size:14px;">Адреса</strong>
+    </p>
+    <p style="margin-bottom:0;">
+        Ставропольский край, г.Ставрополь, ул. К.Маркса д. 76 <a href="javascript:" onclick="map.setCenter([41.97972112833716, 45.04766119580104]);">показать на карте...</a><br/>
+        <b>График работы:</b>
+        <ul style="margin-left:15px;"><li>9.00 - 21.00 без перерывов и выходных</li></ul>
+        <b>Тел.:</b> +7(962)440-80-04<br/>
+    </p>
+    <p style="margin-bottom:0; margin-top:20px;">
+        Ростовская область, г.Таганрог, ул. Александровская д.174 <a href="javascript:" onclick="map.setCenter([38.90424887600545, 47.22232473611966]);">показать на карте...</a><br/>
+        <b>График работы:</b>
+        <ul style="margin-left:15px;">
+            <li>вт-пт 10.00 - 19.00 без перерывов</li>
+            <li>сб-вс 11.00 - 16.00 без перерывов</li>
+            <li>пн выходной</li>
+        </ul>
+        <b>Тел.:</b> +7(928)226-76-81, 226-76-81 <br/>
+
+    </p>
+
+    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+    <div id="ymaps-map-id_1" style="width: 450px; height: 350px;"></div>
+    <script type="text/javascript">
+        var map;
+        function fid_1(ymaps) {
+            map = new ymaps.Map("ymaps-map-id_1",
+                    {center: [38.90424887600545, 47.22232473611966], zoom: 14, type: "yandex#map"});
+            map.controls.add("zoomControl").add("mapTools").add(new ymaps.control.TypeSelector(["yandex#map", "yandex#satellite", "yandex#hybrid", "yandex#publicMap"]));
+
+            map.geoObjects.add(new ymaps.Placemark([38.90424887600545, 47.22232473611966],
+                                {iconContent: 'Интернет-магазин &laquo;Mobile26.net&raquo;',
+                                 balloonContent: "Ростовская область, г.Таганрог, ул. Александровская д.174<br/>" +
+                                                 "<b>График работы:</b> вт-пт 10.00 - 19.00 без перерывов<br/>" +
+                                                 "сб-вс 11.00 - 16.00<br/>" +
+                                                 "пн выходной<br/>" +
+                                                 "<b>Тел.:</b> +7(928)226-76-81, 226-76-81"},
+                                {preset:"twirl#blueStretchyIcon"}));
+            map.geoObjects.add(new ymaps.Placemark([41.97972112833716, 45.04766119580104],
+                                {iconContent: 'Интернет-магазин &laquo;Mobile26.net&raquo;',
+                                 balloonContent:"Ставропольский край, г.Ставрополь, ул. К.Маркса д. 76.<br/>" +
+                                                "<b>График работы:</b> 9.00 - 21.00 без перерывов и выходных<br/>" +
+                                                "<b>Тел.:</b> +7(962)440-80-04"},
+                                {preset:"twirl#blueStretchyIcon"}));
+    };</script>
+    <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?coordorder=longlat&load=package.full&wizard=constructor&lang=ru-RU&onload=fid_1"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.showmap1').click(function(){
+                debugger;
+                map.setCenter([38.90424887600545, 47.22232473611966])
+            });
+            jQuery('.showmap2').click(function(){
+                map.setCenter([41.97972112833716, 45.04766119580104])
+            });
+        });
+    </script>
+    <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+
+    <p>
+        <hr/>
+        <br/>
+        <strong class="didact" style="font-size:14px;">Реквизиты</strong><br/>
+        <br/>
+        ИП Абраменко А.Д.<br/>
+        ИНН 263602916706<br/>
+        ОГРНИП 311265127700521<br/>
+        Банк: ОАО АКБ “Авангард” в городе Ставрополе<br/>
+        ИНН 7702021163<br/>
+        БИК 044525201<br/>
+        Р/с 40817810517100902924<br/>
+        К/с 30101810000000000201
+    </p>
+</body>
+</html>

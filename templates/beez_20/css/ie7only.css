@@ -1,0 +1,98 @@
+/**
+ * @author  ( Angie Radtke  )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2009 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+
+
+#right ul.menu ul
+{zoom:1;}
+
+#users-profile-core legend,
+#users-profile-custom legend,
+.profile-edit legend,
+.registration legend
+{margin-bottom:15px}
+
+.login-fields input
+{width:14em}
+
+#close a
+{
+	cursor:pointer
+}
+
+#close a span
+{
+	line-height:normal
+}
+#mod_virtuemart_search{
+    border: solid 0px white;
+}
+div.vmgroup.h-akcii{
+    margin-top:20px;
+    height:441px;
+}
+.rad10 {
+    display:none;
+}
+.productdetails-view{
+    margin-left:-219px;
+}
+.product-detail-images{
+    margin-left:-219px;
+}
+.main61{
+    margin-left:10px;
+}
+.menu-openable ul.VMmenu li.VmClose {
+    display: block;
+    width: 190px;
+}
+.menu-openable ul.VMmenu li.VmOpen {
+    display: block;
+    width: 190px;
+}
+
+.menu-openable ul.VMmenu li.VmOpen > div > a {
+    display: block;
+    width: 190px;
+}
+
+.menu-opener{
+    margin-left:52px;
+}
+#product-tab-detail{
+    margin-left:-220px;
+}
+div.product-details-slides{
+   width:900px !important;
+}
+.slides_container{
+    width:905px;
+}
+
+.cart-view div div.width50.floatleft.right{
+    float:right;
+}
+.ie-billto-shipto{
+    width:370px;
+}
+#search-cat input[type="text"],
+.ie-search-box input.inputbox{
+    margin-top:-9px;
+}
+#search-cat select{
+    margin-top:2px;
+}
+.m-akcii li{
+    list-style-image: url("images/new/point_1-ie.png");
+}

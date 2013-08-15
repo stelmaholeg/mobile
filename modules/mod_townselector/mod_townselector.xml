@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+
+	<name>Hello World!</name>
+	<!-- Следующие элементы не обязательны и могут содержать все, что вы считаете нужным -->
+	<creationDate>05.05.2012</creationDate>
+	<author>Dev Joomla</author>
+	<authorEmail>info@dev-joomla.ru</authorEmail>
+	<authorUrl>http://www.dev-joomla.ru</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!-- Версия модуля – эта строка сохраняется в таблице расширений -->
+	<version>0.0.1</version>
+	<!-- Описание модуля также не обязательно и если оно не указано, то берется из тэга  name -->
+	<description>Это описание модуля mod_townselector...</description>
+	<!-- Обратите внимание на тэг  files: в нем содержится информация, о том какие файлу нужно копировать в каталог модуля -->
+	<files>
+		<filename module="mod_testmodule">mod_townselector.php</filename>
+		<filename>mod_townselector.xml</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+	</files>
+    <!-- Описание параметров модуля -->
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="greeting"
+                        type="text"
+                        default="I am a module"
+                        label="Greeting"
+                        description="The greeting to display"
+                        />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

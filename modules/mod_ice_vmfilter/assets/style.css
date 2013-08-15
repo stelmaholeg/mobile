@@ -1,0 +1,43 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2010 IceTheme. All Rights Reserved
+  
+  License:
+  GPLv2
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+p.ice-vmfilter-textabove {
+	padding-top:.6em;
+	margin-bottom:1.3em;
+	font-size:1.1em;}
+	
+.ice-vmfilter-type h4 {
+	font-size:1.2em}
+		
+.ice-vmfilter-hide{
+    display:none}
+	
+.ice-vmfilter-show{}
+	
+.ice-vmfilter-gp{
+    cursor: pointer;
+    cursor: hand;
+	font-style:italic;
+    background: none!important;}
+	
+.ice-vmfilter-active{
+   color: red;}
+   
+li.ice-vmfilter-selected {
+    font-weight: bold;
+	list-style-type:none;
+	margin-left:-1.45em;}
+
+	span.ice-vmfilter-remove img {
+		float:left;
+		margin:.15em .5em 0 0}
+
+

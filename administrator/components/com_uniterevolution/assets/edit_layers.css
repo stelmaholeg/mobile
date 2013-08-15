@@ -1,0 +1,483 @@
+
+/* ============================================= */ 
+/*   		General Items 				 */ 
+/* ============================================= */
+
+.edit_slide_wrapper .slide_layers{
+	border:1px solid black;
+	overflow:hidden;
+	background-position:center center;
+	background-repeat:no-repeat;
+	position:relative;
+	float:left;
+	margin-top:10px;
+}
+
+.slide_settings_wrapper{
+	margin-bottom:20px;
+}
+
+.edit-layer-buttons-wrapper{	
+	height:85px;
+	clear:both;
+}
+
+.margin_left10{
+	margin-left:10px;
+}
+
+.margin_left20{
+	margin-left:20px;
+}
+
+.vert_sap{
+	margin-top:20px;
+}
+
+.vert_sap_medium{
+	margin-top:40px;
+}
+
+.hor_sap{
+	padding-right:15px;
+}
+
+.hor_sap_double{
+	padding-right:30px;
+}
+
+.edit_layers_left{
+	width:450px;
+	float:left;
+}
+
+.edit_layers_right{
+	width:450px;
+	float:left;
+	margin-left:50px;
+}
+
+.postbox-left{
+	width:450px;
+}
+
+#layer_captions_down{
+  	cursor: pointer;
+    float: left;
+    height: 26px;
+    margin-top: 0px;
+    width: 26px;
+    margin-left:0px;
+}
+
+#layer_captions_down span {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#button_edit_css{
+	float:right;
+	margin-right:10px;
+}
+
+#linkInsertButton{
+	float:right;
+	margin-right:8px;
+	padding:0px;
+	padding-bottom:2px;	
+	font-size:11px;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+#linkInsertButton.disabled{
+	color:#ACA899;
+	cursor:default;
+	font-weight:normal;
+}
+
+#divLayers .layer_selected{
+	/* glow on selected */
+	box-shadow: 0 0 8px #DDE573;
+    -webkit-box-shadow: 0 0 8px #DDE573; 
+    -moz-box-shadow: 0 0 8px #DDE573;	
+}
+
+.ui-draggable {
+    cursor: move;
+}
+
+/* ============================================= */ 
+/*   		Layer Sortbox 				 */ 
+/* ============================================= */
+
+
+.layer_sortbox{
+	width:460px;
+	min-height:266px;
+}
+
+#button_sort_visibility{
+	width:20px;	
+	height:14px;
+	background:url(images/eyes.png) no-repeat;
+	cursor:pointer;
+	float:right;
+	margin-top:5px;
+	margin-right:5px;
+	margin-left:3px;
+}
+
+
+#button_sort_visibility.e-disabled {
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+}
+
+
+.layer_sortbox input.sortbox_time,		/* sortbox inputboxes */
+.layer_sortbox input.sortbox_depth
+{	
+	float:right;
+	width:40px;
+	background-color:#EBEBEB;
+	border:1px solid #E0E0E0;
+	color:#04076A;
+}
+
+.layer_sortbox input.sortbox_depth{
+	width:35px;
+}
+
+.layer_sortbox .sortbox_eye{
+	width:20px;	
+	height:14px;
+	background:url(images/eyes.png) no-repeat;
+	float:right;	
+	margin-top:3px;
+	margin-left:3px;
+	margin-right:3px;
+	cursor:pointer;
+}
+
+.sortlist li.sortitem-hidden .sortbox_eye{
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+
+  /* Netscape */
+  -moz-opacity: 0.5;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+
+  /* Good browsers */
+  opacity: 0.5;
+}
+
+.sortlist li.sortitem-hidden .sortbox_text{
+	color:#B9A8B9;
+}
+
+.sortlist li.sortitem-hidden{
+	background-image:none;
+	background-color:#FFF0E6;
+}
+
+.sortlist{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+.sortlist li span.ui-icon{
+	float:right;
+	margin-top:4px;
+}
+
+.sortlist li{
+	padding-left:4px;
+	cursor:move;
+	min-height:20px;
+	margin-bottom:6px;	
+}
+
+.sortlist li .sortbox_text{
+	display:block;
+	float:left;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+
+
+/* ------ Layer Sorting Button ---- */
+ 
+.layer_sortbox .button_sorttype{
+	width:70px;
+	float:right;
+	height:20px;
+	text-align:center;
+	margin-right:2px;
+	margin-top:2px;
+}
+
+.layer_sortbox .button_sorttype.ui-state-hover{	
+	cursor:pointer;
+}
+
+.layer_sortbox .button_sorttype.ui-state-active{
+	cursor:default;
+}
+
+.layer_sortbox .button_sorttype span{
+	display:block;
+	padding:0px;
+	margin:0px;
+	float:none;
+	margin-top:3px;
+	text-align:center;
+}
+
+
+.layer_sortbox input.sortbox_time,		/* sortbox inputboxes */
+.layer_sortbox input.sortbox_depth
+{	
+	float:right;
+	width:40px;
+	background-color:#EBEBEB;
+	border:1px solid #E0E0E0;
+	color:#04076A;
+	margin-top:2px;
+}
+
+.layer_sortbox input.sortbox_depth{
+	width:35px;
+	margin-left:2px;
+}
+
+
+/* ============================================= */ 
+/*   		Layer Sortbox 				 */ 
+/* ============================================= */
+
+.slide_layer .slide_layer_video{
+	background-color:black;
+	position:relative;	
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.slide_layer .video-layer-inner{
+	height:100%;
+	width:100%;
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+.slide_layer .video-icon-youtube{	
+	background-image:url(images/icon_youtube.png);
+}
+
+.slide_layer .video-icon-vimeo{	
+	background-image:url(images/icon_vimeo.png);
+}
+
+
+.slide_layer_video .layer-video-title{
+	color:white;
+	padding:10px;
+	text-align:center;		
+}
+
+/* ============================================= */ 
+/*   		Buttons Dialog						 */ 
+/* ============================================= */
+
+.list-buttons{
+	list-style:none;	
+}
+	
+.list-buttons li{
+	float:left;
+	margin-left:10px;	
+}
+
+.list-buttons li a:hover{
+	text-decoration:none;
+}
+
+a.tp-button:hover{
+	text-decoration:none;
+}
+
+
+/* ============================================= */ 
+/*   		Layer Form Position	and styles		 */ 
+/* ============================================= */
+
+
+textarea#layer_text{
+	width:390px;
+	height:80px;
+}
+
+.layer_animation_row,
+.layer_easing_row,
+.layer_left_row,
+.layer_top_row{
+	float:left;
+}
+
+#layer_speed_row,
+#layer_hidden_row{
+	clear:none;
+	float:left;
+}
+
+#layer_hidden_row{
+	margin-left:80px;	
+}
+
+#layer_hidden-lbl{
+	width:107px !important;
+	min-width:107px !important;
+}
+
+.layer_easing_row{
+	margin-left:20px;
+}
+
+#layer_easing-lbl{
+	width:50px !important;
+	min-width:50px !important;
+}
+
+#layer_left-lbl,
+#layer_top-lbl{
+	width:18px !important;
+	min-width:18px !important;
+}
+
+#layer_top-lbl{
+	margin-left:20px;
+}
+
+#button_edit_video{
+	float:right;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+#layer_caption{
+	width:165px;
+}
+
+input.text-sidebar-link{
+	width:305px;
+}
+
+#layer_endtime_row,
+#layer_endspeed_row,
+#layer_endanimation_row,
+#layer_endeasing_row{
+	clear:none;
+	float:left;
+}
+
+#layer_endspeed_row{
+	margin-left:50px;
+}
+
+#layer_endanimation-lbl{
+	width:100px !important;
+	min-width:100px !important;
+}
+
+#layer_slide_link_row{
+	clear:both;
+	float:left;
+}
+
+#layer_video_autoplay_row{
+	clear:none;
+	float:right;	
+}
+
+#layer_video_autoplay-lbl{
+	width:95px !important;
+	min-width:95px !important;
+}
+
+
+/* ============================================= */ 
+/*   End Layer Form Position and styles		     */ 
+/* ============================================= */
+
+
+/* ============================================= */ 
+/*   	Timeline		 					 	 */ 
+/* ============================================= */
+
+.edit_slide_wrapper .timeline{
+	width:501px;
+	height:10px;
+	background:url(images/timeline.png) repeat-x 0px 0px;
+	position:relative;
+	margin-bottom:40px;
+	margin-left:100px;
+	z-index:10;
+}	
+
+.edit_slide_wrapper .timeline .mintime	{
+	font-color:#777;
+	font-size:10px;
+	position:absolute;
+	top:20px;
+	left:-20px;
+	white-space:no-wrap;
+	width:40px; text-align:center;
+}
+
+.edit_slide_wrapper .layertime {
+	position:absolute;
+	top:1px;
+	height:9px;
+	background:rgba(60,147,154,0.4);
+	xwidth:300px;left:10px;
+	display:none;
+}
+
+.edit_slide_wrapper .layertime.layertime-error{
+	background:rgba(157,23,23,0.4); 
+}
+
+
+.edit_slide_wrapper .timeline .maxtime	{
+	font-color:#777;
+	font-size:10px;
+	position:absolute;
+	top:20px;
+	left:480px;
+	white-space:no-wrap;
+	width:40px; text-align:center;
+}
+
+
+/* ============================================= */ 
+/*   	End Timeline	 					 	 */ 
+/* ============================================= */
+

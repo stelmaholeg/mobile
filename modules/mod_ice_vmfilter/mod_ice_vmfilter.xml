@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+    <name>IceVmFilter</name>
+    <creationDate>July 2010</creationDate>
+    <author>IceTheme</author>
+    <copyright>GNU / GPL</copyright>
+    <authorEmail>info@icetheme.com</authorEmail>
+    <authorUrl>http://www.icetheme.com</authorUrl>
+    <version>1.0</version>
+	<description>MODULE DESCRIPTION</description>
+    <files>
+        <filename module="mod_ice_vmfilter">mod_ice_vmfilter.php</filename>
+        <filename module="mod_ice_vmfilter">index.html</filename>
+        <filename module="mod_ice_vmfilter">helper.php</filename>
+		<filename module="mod_ice_vmfilter">CHANGELOG.php</filename>
+        <folder module="mod_ice_vmfilter">libs</folder>
+		<folder module="mod_ice_vmfilter">assets</folder>
+		<folder module="mod_ice_vmfilter">tmpl</folder>
+
+    </files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_ice_vmfilter.ini</language>
+	</languages>
+    <params addpath="/modules/mod_ice_vmfilter/libs/elements">
+		
+        <param name="show_text_above" type="list" default="1" label="SHOW TEXT ABOVE" description="SHOW TEXT ABOVE DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+        <param name="text_above" type="textarea" default="Select From %CAT%" cols="40" label="TEXT ABOVE"  description="TEXT ABOVE DESC"/> 
+		<param name="fillter_mode" type="list" default="default" label="FILTER MODE" description="FILTER MODE DESC">
+			<option value="single">SINGLE</option>
+			<option value="default">MULTIPLE</option>
+		</param>
+			
+        <param name="max_params_visible" type="text" default="4" label="MAX PARAMS VISIBLE"  description="MAX PARAMS VISIBLE DESC"/>
+        		
+        <param name="text_whenhide" type="text" default="See more..." label="TEXT HIDE"  description="TEXT HIDE DESC"/>
+	<param name="text_whenshow" type="text" default="Hide..." label="TEXT HIDE"  description="TEXT HIDE DESC"/>
+	 
+
+        <param name="producttypes" type="iceproducttypes" label="SELECT PRODUCT TYPE"  description="SELECT PRODUCT TYPE DESC"/>
+		
+		
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="moduleclass_sfx" type="text" default="" label="MODULE CLASS SUFFIX" description="PARAMMODULECLASSSUFFIX" />
+		
+		
+	</params>
+
+	<params group="advanced">
+		<param name="enable_cache" type="list" default="1" label="CACHING" description="CACHING DESC">
+			<option value="1">Use Cache</option>
+			<option value="0">Don't cache</option>
+		</param>
+		<param name="cache_time" type="text" default="30" label="CACHE TIME" description="CACHE TIME DESC" />
+		
+		<param name="auto_renderthumb" type="radio" default="1" label="RENDER THUMBNAIL" description="RENDER THUMBNAIL DESC">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		
+ 
+	</params>
+
+		
+</install>

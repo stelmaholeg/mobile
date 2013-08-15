@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldpath="/administrator/components/com_uniterevolution/models/fields">
+	<fieldset>
+		<field name="id"
+			type="mytext"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+		
+		<field name="title"
+			type="mytext"
+			label="JGLOBAL_TITLE"
+			description="Item Title"
+			class="inputbox"
+			size="30"
+			default="Slide"
+		 />
+
+		 <field name="alias"
+			type="mytext"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox"
+			size="30"
+			default="slide"
+		/>
+		 
+		<field id="published"
+			name="published"
+			type="list"
+			label="JGLOBAL_STATE"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+		>
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>			
+		</field>
+		
+		<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+		
+	</fieldset>
+	
+	<fields name="params">
+		
+		<fieldset name="optional" label="Optional">
+		
+			<field name="image"
+				type="mymediasingle"
+				label="COM_UNITEREVOLUTION_IMAGE"
+				description="COM_UNITEREVOLUTION_IMAGE"
+				class="input_url"
+				buttonclass="btn btn-large"
+			/>
+			
+			<field name="slide_transition" 
+				  type="mylist" 
+				  default="random" 
+				  label="Transition"
+				  description="The appearance transition of this slide.">
+					  <option value="random">Random</option>
+					  <option value="fade">Fade</option>
+					  <option value="slidehorizontal">Slide Horizontal</option>
+					  <option value="slidevertical">Slide Vertical</option>
+					  <option value="boxslide">Box Slide</option>
+					  <option value="boxfade">Box Fade</option>
+					  <option value="slotzoom-horizontal">SlotZoom Horizontal</option>
+					  <option value="slotslide-horizontal">SlotSlide Horizontal</option>
+					  <option value="slotfade-horizontal">SlotFade Horizontal</option>
+					  <option value="slotzoom-vertical">SlotZoom Vertical</option>
+					  <option value="slotslide-vertical">SlotSlide Vertical</option>
+					  <option value="slotfade-vertical">SlotFade Vertical</option>
+					  <option value="curtain-1">Curtain 1</option>
+					  <option value="curtain-2">Curtain 2</option>
+					  <option value="curtain-3">Curtain 3</option>
+					  <option value="slideleft">Slide Left</option>
+					  <option value="slideright">Slide Right</option>
+					  <option value="slideup">Slide Up</option>
+					  <option value="slidedown">Slide Down</option>
+					  <option value="papercut">Premium - Paper Cut</option>
+					  <option value="3dcurtain-horizontal">Premium - 3D Curtain Horizontal</option>
+					  <option value="3dcurtain-vertical">Premium - 3D Curtain Vertical</option>
+					  <option value="flyin">Premium - Fly In</option>
+					  <option value="turnoff">Premium - Turn Off</option>
+					  <option value="custom-1">Custom 1</option>
+					  <option value="custom-2">Custom 2</option>
+					  <option value="custom-3">Custom 3</option>
+					  <option value="custom-4">Custom 4</option>
+			</field>
+
+			 <field name="slot_amount"
+				type="mytext"
+				label="Slot Amount"
+				description="The number of slots or boxes the slide is divided into. If you use boxfade, over 7 slots can be juggy."
+				class="number"
+				default="7"
+			/>
+
+			 <field name="transition_rotation"
+				type="mytext"
+				label="Transition Rotation"
+				description="Rotation (-720 -> 720, 999 = random) Only for Simple Transitions."
+				class="number"
+				default="0"
+			/>
+
+			 <field name="transition_duration"
+				type="mytext"
+				label="Transition Duration"
+				description="The duration of the transition (Default:300, min: 100 max 2000)."
+				unit="ms"
+				class="number"
+				default="300"
+			/>
+			
+			 <field name="delay"
+				type="mytext"
+				label="Delay"
+				description="A new Delay value for the Slide. If no delay defined per slide, the delay defined via Options will be used"
+				unit="ms"
+				class="number"
+				default=""
+			/>
+
+			<field name="enable_link"
+				  type="myradio"
+				  default="false"
+				  label="Enable Link"
+				  description="Enable the link to the whole slide pic">
+					  <option value="true">Yes</option>
+					  <option value="false">No</option>
+			</field>
+
+			 <field name="link_type"
+				type="myradio"
+				label="Link Type"
+				class="radio_medium"
+				description="Type of the link, regular or link to a slide"
+				default="regular">
+				  <option value="regular">Regular</option>
+				  <option value="slide">To Slide</option>				
+			</field>			
+			
+			 <field name="slide_link"
+				type="mytext"
+				label="Link To Slide"
+				description="Choose a slide that this slide will be link to"
+				>
+			</field>			
+			
+			 <field name="link"
+				type="mytext"
+				class="link"
+				label="Slide Link"
+				description="A link on the whole slide pic"
+				default=""
+			/>
+
+			 <field name="link_open_in"
+				type="mylist"
+				label="Link Target"
+				description="Slide link target"
+				default="same">
+				  <option value="same">Same Window</option>
+				  <option value="new">New Window</option>				
+			</field>
+			
+			 <field name="link_pos"
+				type="myradio"
+				label="Link Position"
+				description="The position of the link related to layers"
+				default="front">
+				  <option value="front">Front</option>
+				  <option value="back">Back</option>				
+			</field>
+			
+			<field type="control"
+				   ctype="show"
+				   parent="enable_link"
+				   value="true"
+				   child="link,link_open_in,slide_link,link_type,link_pos"
+			 ></field>
+
+			<field type="control"
+				   ctype="enable"
+				   parent="link_type"
+				   value="regular"
+				   child="link,link_open_in"
+			 ></field>
+
+			<field type="control"
+				   ctype="disable"
+				   parent="link_type"
+				   value="regular"
+				   child="slide_link"
+			 ></field>
+			
+			<field name="enable_video"
+				  type="myradio"
+				  default="false" 
+				  label="Enable Full Width Video"
+				  description="Put a full width video on the slide">
+					  <option value="true">Yes</option>
+					  <option value="false">No</option>
+			</field>
+
+			 <field name="video_id"
+				type="mytext"
+				label="Video ID"
+				description="The field can take Youtube ID (example: QohUdrgbD2k) or Vidmeo ID (example: 30300114)"
+				default=""
+			 />
+
+			 <field name="video_autoplay"
+				type="mycheckbox"
+				label="Video Autoplay"
+				description="Enable video autoplay on enter slide"
+				default=""
+			 />
+			
+			<field type="control"
+				   ctype="show"
+				   parent="enable_video"
+				   value="true"
+				   child="video_id,video_autoplay"
+			 ></field>
+			
+			 <field name="slide_thumb"
+				type="media"
+				label="Thumbnail"
+				description="Slide Thumbnail. If not set - it will be taken from the slide image."
+			/>
+			
+		</fieldset>		
+			
+	</fields>
+</form>

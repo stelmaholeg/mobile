@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- see http://docs.joomla.org/Standard_parameter_types -->
+<config>
+    <fieldset name="fav_layout_opt" label="COM_FAVORITES_FAV_LAYOUT_OPT" description="COM_FAVORITES_FAV_LAYOUT_DESC">
+        <field name="fav_tooltip_enabled" type="radio" default="0" label="COM_FAVORITES_TOOLTIP_CTRL_LBL" description="COM_FAVORITES_TOOLTIP_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+        <field name="fav_qty_enabled" type="radio" default="1" label="COM_FAVORITES_QTY_CTRL_LBL" description="COM_FAVORITES_QTY_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+        <field name="fav_txt_btn_enabled" type="radio" default="1" label="COM_FAVORITES_TXTBTN_CTRL_LBL" description="COM_FAVORITES_TXTBTN_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+    </fieldset>
+    <fieldset name="wish_layout_opt" label="COM_FAVORITES_WISH_LAYOUT_OPT" description="COM_FAVORITES_WISH_LAYOUT_DESC">
+        <field name="wish_tooltip_enabled" type="radio" default="0" label="COM_FAVORITES_TOOLTIP_CTRL_LBL" description="COM_FAVORITES_TOOLTIP_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+        <field name="wish_qty_enabled" type="radio" default="1" label="COM_FAVORITES_QTY_CTRL_LBL" description="COM_FAVORITES_QTY_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+        <field name="wish_txt_btn_enabled" type="radio" default="1" label="COM_FAVORITES_TXTBTN_CTRL_LBL" description="COM_FAVORITES_TXTBTN_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+    </fieldset>
+    <fieldset name="tmpl_layout_opt" label="COM_FAVORITES_TMPL_LAYOUT_OPT" description="COM_FAVORITES_TMPL_LAYOUT_DESC">
+        <field name="tmpl_qty_enabled" type="radio" default="1" label="COM_FAVORITES_QTY_CTRL_LBL" description="COM_FAVORITES_QTY_CTRL_LBL_DESC">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+        </field>
+    </fieldset>
+    <fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >
+        <field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" validate="rules" filter="rules" component="com_wishlist" section="component" />
+    </fieldset>
+</config>

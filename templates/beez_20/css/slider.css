@@ -1,0 +1,9 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;outline:0;font-weight:normal}
+*{outline:none}
+html{margin:0;padding:0}
+#footer{padding-top:10px;width:979px;margin:0}
+#bigPic{width:800px;height:300px;padding:1px}
+#bigPic img{position:absolute;display:none}
+ul#thumbs li.active{border:2px solid #000;background:#fff;padding:2px;float:left;border-radius:6px}
+ul#thumbs li{float:left;margin-right:25px;border:1px solid #CCC;padding:3px;cursor:pointer;background:transparent url(../../../../www-practice/images/fon2.jpg) repeat-x;border-radius:10px}
+ul#thumbs img{float:left;line-height:80px}

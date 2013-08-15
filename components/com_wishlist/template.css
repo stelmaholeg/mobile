@@ -1,0 +1,128 @@
+/* Favorite List & Wishlists CSS Style */
+
+.fav_header {
+	clear:both;
+	text-align: center;
+	color:#C00; 
+	font-size:14px;
+	font-weight: bold;
+    line-height: 40px;
+	margin-bottom: 10px;
+}
+
+.table_header {
+	text-align:left;
+	color:#333;
+	font-weight:bold;
+}
+
+.fav_title {
+	color:#333;
+	text-align: center;
+	font-size:14px;
+	font-weight:bold;
+	line-height:50px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #CCC;
+}
+
+.fav_container {
+	min-height: 170px;
+	margin-bottom:10px;
+}
+
+.left-col {
+	clear:both;
+	float:left;
+	width:21%;
+}
+
+.col_date {
+	font-size:15px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.col_info {
+	text-align:center;
+	line-height:5px;
+}
+
+.col_favorite {
+	margin-top: 10px;
+}
+
+.col_image {
+	float:left;
+	margin-left: 10px;
+	width:34%;
+	text-align:center;
+	float:left;
+}
+
+.prod_image {
+	border: 0px solid;
+	padding:5px 0px 0px 5px;
+}
+
+.prod_name {
+	font-weight:bold;
+	line-height: 15px;
+}
+
+.prod_price {
+	font-size:12px;
+	color:#666;
+}
+
+.col_controls {
+	float:right;
+	width:42%;
+	padding: 1px 0 1px 5px;
+	text-align: center;
+}
+
+.prod_qty {
+	float:left;
+	margin-right:5px;
+}
+
+.addtocart-area{
+text-align:left;
+width:100%;
+}
+
+.wish_alert {
+color:#FF0000;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+line-height: 25px;
+}
+
+.highlighted_txt {
+font-weight:bold; 
+background-color:yellow;
+}
+
+.jcb_pagination {
+	clear:both;
+	/*border-top:2px solid #CCC;*/
+}
+/* CSS Style for Favorite Button */
+.addtofav_button {background: url('images/star.png') 5px 2px no-repeat #F5F5F5; height:20px; color:#616161; font-size:11px; margin-top:5px; padding:0 0 0 27px; text-align:left; border:none;}
+.deletefav_button {background: transparent; width:132px; height:23px; color:#F90000; font-size:13px; margin-top:5px; padding:0; text-align:center;  border:none;}
+
+
+.add-to-fav a,
+.add-to-fav a:link,
+.add-to-fav a:hover,
+.add-to-fav a:visited,
+.add-to-fav a:active{
+    color:#5C9005;
+    font-size:11px;
+	text-decoration:none;
+}
+.add-to-fav input[type="submit"]{
+    /*margin-left:42px;*/
+}

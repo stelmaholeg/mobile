@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+
+#mod_s_form{
+	background:#f3f3f3; 
+	border:1px solid #cccccc; 
+	padding:10px;
+}
+#mod_category_div{
+	background:#f9f9f9;
+	border:1px dashed #cccccc;
+	padding:5px;
+	margin: 5px;
+}
+#mod_mf_div{
+	background:#f9f9f9;
+	border:1px dashed #cccccc;
+	padding:5px;
+	margin: 5px;
+}
+#mod_typ_div{
+	background:#f9f9f9;
+	border:1px dashed #cccccc;
+	padding:5px;
+	margin: 5px;
+}
+#mod_harakt_div{
+	background:#f9f9f9;
+	border:1px dashed #cccccc;
+	padding:5px;
+	margin: 5px;
+}
+#mod_price_div{
+	background:#f9f9f9;
+	border:1px dashed #cccccc;
+	padding:5px;
+	margin: 5px;
+}
+#mod_price_div input {
+	border:1px solid blue;
+	padding:2px;
+	margin: 5px;
+        width: 30px;
+}
+
+#product_print{
+	margin-top : 10px;
+}
+.parameter_label{
+    font-weight: bold;
+    font-style: italic;
+}
+.label{
+    font-weight: bold;
+}
+
+.colichestvo{
+    font-weight: bold;
+    color: blue;
+}
+.pagenav a{
+    cursor: pointer;
+    color: rgb(19, 92, 174);
+}
+.colichestvo{
+    font-weight: bold;
+    color: blue;
+}
+.add_to_cart_button{
+border: medium none ;
+background: transparent url(/components/com_virtuemart/themes/default/images/add-to-cart_blue.gif) no-repeat scroll left center;
+text-align: center;
+width: 160px;
+height: 35px;
+cursor: pointer;
+font-weight: bold;
+font-family: inherit;
+vertical-align: middle;
+}
