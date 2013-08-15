@@ -514,7 +514,7 @@ ul#thumbs img {
     overflow: hidden;
     border: solid 1px #EAEAEA;
 }
-#grad-underslider{
+.grad-underslider{
     background: url('images/new/slider-down-gradient.png')  -15px -12px no-repeat;
     width:775px;
     height:7px;

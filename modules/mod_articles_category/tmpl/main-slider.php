@@ -1,5 +1,5 @@
 <div id="image"></div>
-<div id="grad-underslider" style="margin-bottom:75px;"></div>
+<div class="grad-underslider" style="margin-bottom:75px;"></div>
 <div>
     <div style="position: relative; height: 129px; margin-left:-220px; width:995px; z-index: 1;" id="slider">
         <a id="previmg" class="imgnav" href="javascript:slideShow.nav(-1)" style="float:left;"> < </a>

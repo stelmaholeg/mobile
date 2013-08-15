@@ -301,8 +301,7 @@ div.color_swatch {
 		<?php 
 		if ($this->edit) { ?>
 			<div id="options-reset-box">
-				<a href="#" id="options-reset">
-					<?php echo JText::_('COM_ACEPOLLS_RESET_VOTES'); ?></a>
+				<a title="" href="#" id="options-reset"><?php echo JText::_('COM_ACEPOLLS_RESET_VOTES'); ?></a>
 				<span style="color:red; display:none;">
 				<?php echo JText::_('COM_ACEPOLLS_RESET_VOTES_DESC'); ?></span>
 			</div>

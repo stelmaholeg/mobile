@@ -104,7 +104,7 @@ ul#thumbs li.active{background:none repeat scroll 0 0 #fff;border:2px solid #000
 ul#thumbs li{border:1px solid #ccc;border-radius:10px;cursor:pointer;float:left;margin-right:18px}
 ul#thumbs img{float:left;line-height:80px}
 #image{width:773px;height:340px;overflow:hidden;border:solid 1px #EAEAEA;text-align:center}
-#grad-underslider{background:url(images/new/slider-down-gradient.png) no-repeat -15px -12px;width:775px;height:7px}
+.grad-underslider{background:url(images/new/slider-down-gradient.png) no-repeat -15px -12px;width:775px;height:7px}
 #image img{height:340px}
 #slider{position:relative;width:1147px;height:124px;margin-left:-220px;width:1000px;z-index:1;border-bottom:solid 1px #EBEBEB;border-top:solid 1px #EBEBEB}
 #subslider{background:url(images/new/bacground_under_slider_line_elipse.png) no-repeat;width:1042px;height:20px;margin-left:-267px;margin-top:-12px}

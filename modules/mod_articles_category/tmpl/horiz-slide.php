@@ -65,5 +65,5 @@ defined('_JEXEC') or die;
 </ul>
 <div style="clear:both"></div>
 </div>
-<div id="grad-underslider"></div>
+<div class="grad-underslider"></div>
 

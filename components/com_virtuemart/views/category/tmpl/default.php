@@ -282,12 +282,13 @@ if (!empty($this->products)) {
                     <input type="hidden" value="<?php echo $product->product_name; ?>" class="pname">
                     <input type="hidden" value="com_virtuemart" name="option">
                     <input type="hidden" value="cart" name="view">
-                    <noscript>&lt;input type="hidden" name="task" value="add" /&gt;</noscript>
+                    <!--noscript>&lt;input type="hidden" name="task" value="add" /&gt;</noscript-->
+                    <noscript><input type="hidden" name="task" value="add" /></noscript>
                     <input type="hidden" value="<?php echo $product->virtuemart_product_id; ?>" name="virtuemart_product_id[]">
                     <input type="hidden" value="<?php echo $product->virtuemart_category_id; ?>" name="virtuemart_category_id[]">
                 </form>
             </div>
-            <div class="add-to-fav" style="text-align: center;white-space:nowrap;width:250px; margin-top:5px;"><?php require(JPATH_BASE.DS."components/com_wishlist/template/addtofavorites_form.tpl.php"); ?></div>
+            <div class="add-to-fav" style="text-align:center;white-space:nowrap;width:250px;margin-top:5px"><?php require(JPATH_BASE.DS."components/com_wishlist/template/addtofavorites_form.tpl.php"); ?></div>
             <div class="clear"></div>
 		</div>
 	<?php
