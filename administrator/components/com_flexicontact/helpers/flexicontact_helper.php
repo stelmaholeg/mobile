@@ -143,7 +143,7 @@ static function make_info($title, $link='')
 	if ($link != '')
 		$html .= '<a href="'.$link.'" target="_blank">';
 		
-	$html .= '<img src="'.LAFC_ADMIN_ASSETS_URL.'info-16.png" border="0" alt="" title="'.$title.'" />';
+	$html .= '<img src="'.LAFC_ADMIN_ASSETS_URL.'info-16.png" style="border:0" alt="" title="'.$title.'" />';
 	
 	if ($link != '')
 		$html .= '</a>';#

@@ -46,7 +46,7 @@ $document->addStyleDeclaration("div#poll_loading_".$poll->id." {
      <div>
         <div class="radio" ></div>
         <input type="radio" name="voteid" id="mod_voteid<?php echo $options[$i]->id;?>" value="<?php echo $options[$i]->id;?>" alt="<?php echo $options[$i]->id;?>" <?php echo $disabled; ?> />
-	<label for="mod_voteid<?php //echo $options[$i]->id;?>">		
+	<label for="mod_voteid<?php echo $options[$i]->id;?>">		
             <?php echo $options[$i]->text; ?>
 	</label>
         

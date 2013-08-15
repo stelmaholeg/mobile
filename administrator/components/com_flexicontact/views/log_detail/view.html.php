@@ -48,7 +48,7 @@ function _status($status)
 	if ($status == '0')		// '0' status means no mail was sent
 		return '';
 	if ($status == '1')		// '1' means email was sent ok
-		return '<img src="'.LAFC_ADMIN_ASSETS_URL.'tick.png" border="0" alt="" />';
+		return '<img src="'.LAFC_ADMIN_ASSETS_URL.'tick.png" style="border:0" alt="" />';
 	return $status;			// anything else was an error
 }
 

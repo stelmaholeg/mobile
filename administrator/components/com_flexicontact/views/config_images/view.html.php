@@ -137,7 +137,7 @@ function display($tpl = null)
 		if ($rowCount == 0)
 			echo '<tr>';
 		echo "\n".'<td valign="top" width="'.$column_width.'%">';
-		echo "\n".'  <img hspace="0" vspace="0" border="0" src="'.JURI::root().'components/com_flexicontact/images/'.$filename.'" alt="" /></td>';
+		echo "\n".'  <img hspace="0" vspace="0" style="border:0" src="'.JURI::root().'components/com_flexicontact/images/'.$filename.'" alt="" /></td>';
 		echo "\n".'<td valign="top" width="'.$column_width.'%"><b>'.utf8_encode($filename).'</b><br />';
 		echo $description.'<br />';
 		echo $imageX.'x'.$imageY.'<br />';

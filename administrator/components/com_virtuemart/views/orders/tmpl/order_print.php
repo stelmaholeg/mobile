@@ -61,7 +61,7 @@ defined('_JEXEC') or die('Restricted access');
 	<tr>
 	    <td valign="top">
 		<strong><em><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_BILL_TO_LBL') ?></em></strong><br/>
-		<table border="0"><?php
+		<table style="border:0"><?php
 foreach ($this->userfields['fields'] as $_field) {
     if (!empty($_field['value'])) {
 	echo '<tr><td class="key">' . $_field['title'] . '</td>'
@@ -70,9 +70,9 @@ foreach ($this->userfields['fields'] as $_field) {
 }
 ?></table>
 	    </td>
-	    <td valign="top">
+	    <td style="vertical-align:top">
 		<strong><em><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SHIP_TO_LBL') ?></em></strong><br/>
-		<table border="0"><?php
+		<table style="border:0"><?php
 		    foreach ($this->shipmentfields['fields'] as $_field) {
 			if (!empty($_field['value'])) {
 			    echo '<tr><td class="key">' . $_field['title'] . '</td>'
@@ -83,23 +83,23 @@ foreach ($this->userfields['fields'] as $_field) {
 	    </td>
 	</tr>
     </table>
-    <hr width="100%">
-    <table class="adminlist" width="100%">
+    <hr style="width:100%">
+    <table class="adminlist" style="width:100%">
 	<tr>
 	    <td colspan="2">
 		<table class="adminlist">
 		    <thead>
 			<tr>
-			    <th class="title" width="47" align="left"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_QUANTITY') ?></th>
-			    <th class="title" width="*" align="left"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_NAME') ?></th>
-			    <th class="title" width="10%" align="left"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SKU') ?></th>
-			    <th class="title" width="10%"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_PRODUCT_STATUS') ?></th>
-			    <th class="title" width="130"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_FORM_PRICE_NET') ?></th>
-			    <th class="title" width="130"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_FORM_PRICE_GROSS') ?></th>
+			    <th class="title" style="width:47px;text-align:left"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_QUANTITY') ?></th>
+			    <th class="title" width="*" style="align:left"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_NAME') ?></th>
+			    <th class="title" style="width:10%;text-align:left"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SKU') ?></th>
+			    <th class="title" style="width:10%"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_PRODUCT_STATUS') ?></th>
+			    <th class="title" style="width:130px"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_FORM_PRICE_NET') ?></th>
+			    <th class="title" style="width:130px"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_FORM_PRICE_GROSS') ?></th>
 			    <?php if ( VmConfig::get('show_tax')) { ?>
-				<th class="title" width="130"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_FORM_PRICE_TAX') ?></th>
+				<th class="title" style="width:130px"><?php echo JText::_('COM_VIRTUEMART_PRODUCT_FORM_PRICE_TAX') ?></th>
                                 <?php } ?>
-			    <th class="title" width="130"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_TOTAL') ?></th>
+			    <th class="title" style="width:130"><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_TOTAL') ?></th>
 			</tr>
 		    </thead>
 <?php foreach ($this->orderdetails['items'] as $item) { ?>
@@ -135,8 +135,8 @@ foreach ($this->userfields['fields'] as $_field) {
 
 <tr>
 
-				<td align="right" colspan="4">
-				<div align="right"><strong> <?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SUBTOTAL') ?>:
+				<td style="text-align:right" colspan="4">
+				<div style="text-align:right"><strong> <?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SUBTOTAL') ?>:
 				</strong></div>
 				</td>
 				<td  align="right" style="padding-right: 5px;"><?php echo $this->currency->priceDisplay($this->orderbt->order_subtotal); ?></td>

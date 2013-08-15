@@ -10,12 +10,6 @@ $app = JFactory::getApplication();
 $templatenames = $app->getTemplate();
 $use_default_styles = $params->get('template_style');*/
 ?>
-<style type="text/css">
-	.advertising_blocks{float:left}
-	.advertising_blocks a{display:block;margin-left:5px}
-	.first-block-adver{margin-left:0}
-	.advertising_blocks img{height:220px;width:180px}
-</style>
 
 <div class = "advertising">
 	<div class = "advertising_blocks">

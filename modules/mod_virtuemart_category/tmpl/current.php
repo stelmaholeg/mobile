@@ -8,7 +8,7 @@ if(JRequest::getString('view')=='productdetails'){
 //JHTML::stylesheet ( 'menucss.css', 'modules/mod_virtuemart_category/css/', false );
 $ID = str_replace('.', '_', substr(microtime(true), -8, 8));
 ?>
-<ul class="VMmenu<?php echo $class_sfx ?>" ID="<?php echo "VMmenu".$ID ?>" >
+<ul class="VMmenu<?php echo $class_sfx ?>" id="<?php echo "VMmenu".$ID ?>" >
 <?php foreach ($categories as $category) {
 		$active_menu = 'class="VmClose"';
 		$caturl = JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='.$category->virtuemart_category_id);

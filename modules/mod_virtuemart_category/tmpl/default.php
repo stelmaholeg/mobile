@@ -26,6 +26,7 @@ $js="jQuery(document).ready(function() {
         $hovclass="menu-openable";
     }
 ?>
+
     <?php $active = JFactory::getApplication()->getMenu()->getActive();
     if($active->alias != "home"){ ?>
         <style type="text/css">.menu-opener{top:34px}</style>

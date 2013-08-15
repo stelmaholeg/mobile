@@ -31,7 +31,7 @@ defined('_JEXEC') or die('Restricted access');
 		</tr>
 	</table>
 	
-	<table class="adminlist" align="center" width="90%" cellspacing="2" cellpadding="2" border="0" >
+	<table class="adminlist" align="center" width="90%" cellspacing="2" cellpadding="2" style="border:0">
 		<thead>
 			<tr>
 				<th width="1%"><?php echo JText::_('#'); ?></th>

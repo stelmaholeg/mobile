@@ -27,7 +27,7 @@ $mainframe = JFactory::getApplication();
 		<td valign="top" colspan="2">
 		<fieldset>
 			<legend><?php echo JText::_('COM_VIRTUEMART_FORM_GENERAL'); ?></legend>
-			<table width="100%" border="0">
+			<table style="border:0;width:100%">
 				<!-- Commented out for future use
 				<tr>
 					<td class="key">

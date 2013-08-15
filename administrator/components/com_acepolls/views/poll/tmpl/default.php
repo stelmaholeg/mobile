@@ -17,7 +17,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <form>
-	<table align="center" width="90%" cellspacing="2" cellpadding="2" border="0" >
+	<table align="center" width="90%" cellspacing="2" cellpadding="2" style="border:0">
 		<tr>
 			<td class="moduleheading" colspan="2"><?php echo $this->row->title; ?></td>
 		</tr>

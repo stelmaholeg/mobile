@@ -75,3 +75,7 @@ a.show-registr-form:hover,a.show-login-form:hover{color:#000;text-decoration:und
 .category-modulearticles-1 li a:link,.category-modulearticles-1 li a:hover,.category-modulearticles-1 li a:visited,.category-modulearticles-1 li a{color:#000;text-decoration:underline;font-size:10px}
 .category-modulearticles-1 li a:hover{text-decoration:none;font-size:10px;color:#000}
 #poll_vote_1 label{cursor:pointer}
+.advertising_blocks{float:left}
+.advertising_blocks a{display:block;margin-left:5px}
+.first-block-adver{margin-left:0}
+.advertising_blocks img{height:220px;width:180px}

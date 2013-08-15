@@ -607,22 +607,13 @@ if (!defined('_VM_SCRIPT_INCLUDED')) {
 	type="text/css" />
 
 <div align="center">
-	<table
-		width="100%"
-		border="0">
+	<table style="border:0;width:100%">
 		<tr>
-			<td
-				valign="top"
-				align="center"><a
-				href="http://virtuemart.net"
-				target="_blank"> <img
-					border="0"
-					align="center"
-					src="components/com_virtuemart/assets/images/vm_menulogo.png"
-					alt="Cart" /> </a> <br /> <br />
-				<h2>
-
-				<?php echo JText::_('COM_VIRTUEMART_INSTALLATION_WELCOME') ?></h2>
+			<td valign="top" align="center">
+                            <a href="http://virtuemart.net" target="_blank" title="">
+                                <img border="0"	src="components/com_virtuemart/assets/images/vm_menulogo.png" alt="Cart" style="text-align:center"/> 
+                            </a> <br /> <br />
+				<h2><?php echo JText::_('COM_VIRTUEMART_INSTALLATION_WELCOME') ?></h2>
 			</td>
 			<td>
 				<h2>
@@ -648,11 +639,10 @@ if (!defined('_VM_SCRIPT_INCLUDED')) {
 				if(!$update){
 					?>
 					<div class="icon">
-						<a
-							href="<?php echo JROUTE::_('index.php?option=com_virtuemart&view=updatesmigration&task=installSampleData&token='.JUtility::getToken()) ?>">
+						<a href="<?php echo JROUTE::_('index.php?option=com_virtuemart&view=updatesmigration&task=installSampleData&token='.JUtility::getToken()) ?>">
 							<span class="vmicon48 vm_install_48"></span> <br />
 						<?php echo JText::_('COM_VIRTUEMART_INSTALL_SAMPLE_DATA'); ?>
-							</a>
+						</a>
 					</div>
 
 		<?php } ?>

@@ -223,7 +223,7 @@ class VirtueMartModelPaymentmethod extends VmModel{
 
 		$href = '
 		<a title="'. $action .'">
-		<img src="images/'. $img .'" border="0" alt="'. $alt .'" /></a>'
+		<img src="images/'. $img .'" style="border:0" alt="'. $alt .'" /></a>'
 		;
 		return $href;
 	}*/

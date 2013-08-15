@@ -210,7 +210,7 @@
 			oLabel = jqTransformGetLabel(textarea);
 			oLabel && oLabel.click(function(){textarea.focus();});
 			
-			var strTable = '<table cellspacing="0" cellpadding="0" border="0" class="jqTransformTextarea">';
+			var strTable = '<table cellspacing="0" cellpadding="0" style="border:0" class="jqTransformTextarea">';
 			strTable +='<tr><td id="jqTransformTextarea-tl"></td><td id="jqTransformTextarea-tm"></td><td id="jqTransformTextarea-tr"></td></tr>';
 			strTable +='<tr><td id="jqTransformTextarea-ml">&nbsp;</td><td id="jqTransformTextarea-mm"><div></div></td><td id="jqTransformTextarea-mr">&nbsp;</td></tr>';	
 			strTable +='<tr><td id="jqTransformTextarea-bl"></td><td id="jqTransformTextarea-bm"></td><td id="jqTransformTextarea-br"></td></tr>';
