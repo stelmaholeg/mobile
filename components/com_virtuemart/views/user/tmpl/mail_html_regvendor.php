@@ -43,7 +43,7 @@ $li = '<br />';
 	    <table style="margin: auto;" cellpadding="0" cellspacing="0" width="600" >
 		<tr>
 		    <td>
-			<table width="100%" border="0" cellpadding="0" cellspacing="0" class="html-email">
+			<table  style="border:none;width:100%" cellpadding="0" cellspacing="0" class="html-email">
 			    <tr>
 				<td>
 
@@ -53,7 +53,7 @@ $li = '<br />';
 			    </tr>
 			</table>
 
-			<table class="html-email" cellspacing="0" cellpadding="0" border="0" width="100%">  <tr>
+			<table class="html-email" cellspacing="0" cellpadding="0" style="border:0;width:100%">  <tr>
 				<th width="100%">
 				    <?php echo JText::_('COM_VIRTUEMART_VENDOR_REGISTRATION_DATA') ?>
 				</th>

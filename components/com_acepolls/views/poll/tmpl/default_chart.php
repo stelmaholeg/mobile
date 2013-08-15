@@ -15,7 +15,7 @@
 // no direct access
 defined('_JEXEC') or die('Restricted access'); ?>
 
-<table class="pollstableborder" cellspacing="0" cellpadding="0" border="0" style="martin-top:10px;">
+<table class="pollstableborder" cellspacing="0" cellpadding="0" style="border:0;martin-top:10px;">
 	<?php 
 	$k=0; $i=0;
 	foreach($this->options as $poll_option){ ?>
@@ -31,7 +31,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 			<?php } ?>
 		</td>
 		<td width="<?php echo$this->params->get('chartX'); ?>" >
-			<div style="width:100%; border:<?php echo $this->params->get('bgBarBorder'); ?>; background:#<?php echo$this->params->get('bgBarColor'); ?>; height:<?php echo$this->params->get('barHeight'); ?>px;">
+			<div style="width:100%;border:<?php echo $this->params->get('bgBarBorder'); ?>; background:#<?php echo$this->params->get('bgBarColor'); ?>; height:<?php echo$this->params->get('barHeight'); ?>px;">
 			<div id="poll_bar<?php echo $i; ?>" style="height:<?php echo$this->params->get('barHeight')-2; ?>px; width:<?php echo $poll_option->percent; ?>%; float:left; background-color:#<?php echo $poll_option->color ?>; border:<?php echo $this->params->get('barBorder'); ?> ">
 			</div>
 				<span style="float:left; padding-left:3px;">

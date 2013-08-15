@@ -1,6 +1,4 @@
-<style type="text/css">
-    .sf-reorder{border:0;height:16px;width:16px}
-</style> 
+
 <?php
 defined('_JEXEC') or die('Direct Access to ' . basename(__FILE__) . ' is not allowed.');
 
@@ -1179,7 +1177,7 @@ class ShopFunctions {
 		if ($i > 0 )
 		{       
 			if($enabled) {
-				$html	= '<a href="#reorder"  class="orderUp" title="'.$alt.'">';
+				$html	= '<a href="#reorder" class="orderUp" title="'.$alt.'">';
 				$html	.= '   <img src="images/uparrow.png" class="sf-reorder" alt="'.$alt.'" />';
 				$html	.= '</a>';
 			} else {
@@ -1211,10 +1209,10 @@ class ShopFunctions {
 		{
 			if($enabled) {
 				$html	= '<a href="#reorder" class="orderDown" title="'.$alt.'">';
-				$html	.= '  <img src="images/downarrow.png" width="16" height="16" border="0" alt="'.$alt.'" />';
+				$html	.= '<img src="images/downarrow.png" style="border:0;height:16px;width:16px" alt="'.$alt.'" />';
 				$html	.= '</a>';
 			} else {
-				$html	= '<img src="images/downarrow0.png" width="16" height="16" border="0" alt="'.$alt.'" />';
+				$html	= '<img src="images/downarrow0.png" style="border:0;height:16px;width:16px" alt="'.$alt.'" />';
 			}
 		}
 

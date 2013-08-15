@@ -283,7 +283,7 @@ class VirtuemartViewUser extends VmView {
 		}
 
 		return ('<a href="javascript:void(0);" onclick="return listItemTask(\'cb'. $i .'\',\''. $task .'\')" title="'. $action .'">'
-		.'<img src="images/'. $img .'" border="0" alt="'. $alt .'" /></a>');
+		.'<img src="images/'. $img .'" style="border:0" alt="'. $alt .'" /></a>');
 	}
 
 

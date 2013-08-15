@@ -214,7 +214,7 @@ if (!empty($this->products)) {
         <div class="product floatleft<?php echo $Browsecellwidth . $show_vertical_separator ?>" style="height:395px; width:242px;">
             <div class="spacer">
                 <div style="width:240px; margin:5px; height:200px; border:solid 1px black;" />
-                <?php echo $product->images[0]->displayMediaThumb('class="browseProductImage" border="0" title="'.$product->product_name.'" ',true,'class="modal"'); ?>
+                <?php echo $product->images[0]->displayMediaThumb('class="browseProductImage" style="border:0" title="'.$product->product_name.'" ',true,'class="modal"'); ?>
             </div>
             <h2 style="display:block; width:250px; text-align: center;"><?php echo JHTML::link($product->link, $product->product_name); ?></h2>
             <div class="addtocart-area" style="display:block; width:250px;">

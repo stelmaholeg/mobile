@@ -177,8 +177,8 @@ class LiveUpdate
 			$lbl = JText::_('LIVEUPDATE_ICON_CURRENT');
 		}
 
-		return '<div class="icon"><a href="'.$url.'">'.
-			'<div><img alt="" src="'.$img.'" width="32" height="32" border="0" align="middle" style="float: none" /></div>'.
+		return '<div class="icon"><a title="" href="'.$url.'">'.
+			'<div><img alt="" src="'.$img.'" style="border:0;float:none;height:32px;width:32px" align="middle" /></div>'.
 			'<span class="'.$class.'">'.$lbl.'</span></a></div>';
 	}
 }

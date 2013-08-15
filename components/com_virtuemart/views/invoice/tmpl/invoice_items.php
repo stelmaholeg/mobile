@@ -25,7 +25,7 @@ defined('_JEXEC') or die('Restricted access');
     $colspan=8;
  }
 ?>
-<table class="html-email" width="100%" cellspacing="0" cellpadding="0" border="0">
+<table class="html-email" cellspacing="0" cellpadding="0" style="border:0;width:100%">
 	<tr align="left" class="sectiontableheader">
 		<td align="left" width="5%"><strong><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SKU') ?></strong></td>
 		<td align="left" colspan="2" width="40%" ><strong><?php echo JText::_('COM_VIRTUEMART_PRODUCT_NAME_TITLE') ?></strong></td>

@@ -20,7 +20,7 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 
-<table width="100%" cellspacing="2" cellpadding="4" border="0">
+<table cellspacing="2" cellpadding="4" style="border:0;width:100%">
 	<tr align="left" class="sectiontableheader">
 		<th align="left" ><?php echo JText::_('COM_VIRTUEMART_DATE') ?></th>
 		<th align="left" ><?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_PO_STATUS') ?></th>

@@ -71,7 +71,7 @@ echo "</div>";
 echo "</div>";
 
 //Display Linked Product Image
-if (!empty($product->images[0]) ) $image = $product->images[0]->displayMediaThumb('class="featuredProductImage" border="0"',false) ;
+if (!empty($product->images[0]) ) $image = $product->images[0]->displayMediaThumb('class="featuredProductImage" style="border:none"',false) ;
 else $image = '';	
 echo "<div class='col_image'>";
 echo JHTML::_('link', JRoute::_('index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id='.$product->virtuemart_product_id.'&virtuemart_category_id='.$product->virtuemart_category_id),$image,array('title' => $product->product_name) );		

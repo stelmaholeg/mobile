@@ -85,7 +85,7 @@ defined('_JEXEC') or die('Restricted access'); ?>
 <br />
 
 <?php if ($this->params->get('show_voters') || $this->params->get('show_times')) { ?>
-<table cellspacing="0" cellpadding="0" border="0">
+<table cellspacing="0" cellpadding="0" style="border:0">
 	<tbody>
 		<?php if ($this->params->get('show_voters')) { ?>
 		<tr>

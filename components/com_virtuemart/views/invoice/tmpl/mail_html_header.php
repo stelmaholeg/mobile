@@ -20,7 +20,7 @@
 defined('_JEXEC') or die('Restricted access');
 /* TODO Change the header place in helper or assets ??? */
 ?>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" class="html-email">
+<table style="width:100%;border:0" cellpadding="0" cellspacing="0" class="html-email">
     <tr>
     <td colspan="3">
 	<img alt="" src="<?php  echo JURI::root() . $this-> vendor->images[0]->file_url ?>">

@@ -45,10 +45,10 @@ defined('_JEXEC') or die('Restricted access'); ?>
 		</tr>
 	</table>
 
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<table style="width:100%;border:0" cellspacing="0" cellpadding="0">
 		<thead>
 			<tr>
-				<td width="5" height="20" style="" class="sectiontableheader">
+				<td style="width:5px;height:20px" class="sectiontableheader">
 					<?php echo JText::_('Num'); ?>
 				</td>
 				<td class="sectiontableheader">

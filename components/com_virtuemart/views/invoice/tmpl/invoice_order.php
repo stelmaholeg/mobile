@@ -23,7 +23,7 @@ defined('_JEXEC') or die('Restricted access');
 <h1><?php echo JText::_('COM_VIRTUEMART_INVOICE').' '.$this->invoiceNumber; ?> </h1>
 
 
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<table cellspacing="0" cellpadding="0" style="border:0;width:100%">
     <tr>
 	<td class=""><?php echo JText::_('COM_VIRTUEMART_INVOICE_DATE') ?></td>
 	<td align="left"><?php echo vmJsApi::date($this->invoiceDate, 'LC4', true); ?></td>
@@ -73,7 +73,7 @@ defined('_JEXEC') or die('Restricted access');
     <tr>
 	<td valign="top"><strong>
 	    <?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_BILL_TO_LBL') ?></strong> <br/>
-	    <table border="0"><?php
+	    <table style="border:0"><?php
 	    foreach ($this->userfields['fields'] as $field) {
 		if (!empty($field['value'])) {
 		    echo '<tr><td class="key">' . $field['title'] . '</td>'
@@ -84,7 +84,7 @@ defined('_JEXEC') or die('Restricted access');
 	</td>
 	<td valign="top" ><strong>
 	    <?php echo JText::_('COM_VIRTUEMART_ORDER_PRINT_SHIP_TO_LBL') ?></strong><br/>
-	    <table border="0"><?php
+	    <table style="border:0"><?php
 	    foreach ($this->shipmentfields['fields'] as $field) {
 		if (!empty($field['value'])) {
 		    echo '<tr><td class="key">' . $field['title'] . '</td>'

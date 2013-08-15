@@ -19,7 +19,7 @@
 defined('_JEXEC') or die('Restricted access');
 ?>
 
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<table cellspacing="0" cellpadding="0" style="border:0;width:100%"">
     <tr>
 	<td align="right" colspan="5">Товарный чек № <?php echo $this->orderdetails['details']['BT']->virtuemart_order_id; ?> от <?php echo vmJsApi::date($this->orderdetails['details']['BT']->created_on, 'LC4', true); ?></td>
     </tr>

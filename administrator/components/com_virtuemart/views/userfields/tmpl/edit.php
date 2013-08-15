@@ -77,7 +77,7 @@ AdminUIHelper::imitateTabs('start','COM_VIRTUEMART_USERFIELD_DETAILS');
 				<div id="divValues" style="text-align:left;">
 					<fieldset>
 					<legend><?php echo JText::_('COM_VIRTUEMART_USERFIELDS_ADDVALUES_TIP'); ?></legend>
-						<table align=left id="divFieldValues" cellpadding="4" cellspacing="1" border="0" width="100%" class="admintable">
+						<table align=left id="divFieldValues" cellpadding="4" cellspacing="1" style="border:0" width="100%" class="admintable">
 							<thead>
 								<tr>
 									<th class="title" width="20%"><?php echo JText::_('COM_VIRTUEMART_TITLE') ?></th>

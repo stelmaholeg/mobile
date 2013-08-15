@@ -61,12 +61,7 @@
     <span class="didact" style="font-weight:bold; font-size: 14px; color:#1D70B7;">Проверьте правильность введённой информации и подтвердите заказ</span>
     <br/><br/>
     <?php } ?>
-	<table
-		class="cart-summary"
-		cellspacing="0"
-		cellpadding="0"
-		border="0"
-		width="100%">
+	<table class="cart-summary" cellspacing="0" cellpadding="0" style="border:0;width:100%">
 		<tr>
 			<th align="left" style="padding-left:20px;" class="didact">Наименование товара</th>
 			<th class="didact" align="left" width="70px" ><?php echo JText::_('COM_VIRTUEMART_CART_SKU') ?></th>
@@ -78,7 +73,7 @@
 				<?php } ?>
                                 <!--<th align="right" width="60px"><?php echo "<span  class='priceColor2'>".JText::_('COM_VIRTUEMART_CART_SUBTOTAL_DISCOUNT_AMOUNT') ?></th>-->
 				<th class="didact" align="left" style="padding-left:20px; padding-right:10px;" width="70px">Стоимость</th>
-			</tr>
+                </tr>
 		<?php
 		$i=1;
 		foreach( $this->cart->products as $pkey =>$prow ) { ?>

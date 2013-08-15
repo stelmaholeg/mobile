@@ -30,7 +30,7 @@
 // Check to ensure this file is included in Joomla!
 defined('_JEXEC') or die('Restricted access'); ?>
 
-<table width="100%" border="0" cellpadding="0" cellspacing="0" class="html-email">
+<table style="width:100%;border:0" cellpadding="0" cellspacing="0" class="html-email">
 
   <tr>
     <td width="30%">

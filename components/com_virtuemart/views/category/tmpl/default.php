@@ -241,8 +241,8 @@ if (!empty($this->products)) {
 
             <div style="width:100%; height:155px; text-align: center;">
 				<?php echo '<a style="display:block; width:100%; height:100%;" href="' . $product->link . '">'; ?>
-                <?php //echo $product->images[0]->displayMediaThumb('class="browseProductImage" border="0" title="'.$product->product_name.'" ',true,'class="modal"'); ?>
-				<?php echo $product->images[0]->displayMediaThumb('class="browseProductImage" border="0" title="'.$product->product_name.'" ',false,''); ?>
+                <?php //echo $product->images[0]->displayMediaThumb('class="browseProductImage" style="border:0" title="'.$product->product_name.'" ',true,'class="modal"'); ?>
+				<?php echo $product->images[0]->displayMediaThumb('class="browseProductImage" style="border:0" title="'.$product->product_name.'" ',false,''); ?>
 				<?php echo '</a>'; ?>
             </div>
             <div style="clear:both;"></div>

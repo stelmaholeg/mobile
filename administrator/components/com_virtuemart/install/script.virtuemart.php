@@ -611,7 +611,7 @@ if (!defined('_VM_SCRIPT_INCLUDED')) {
 		<tr>
 			<td valign="top" align="center">
                             <a href="http://virtuemart.net" target="_blank" title="">
-                                <img border="0"	src="components/com_virtuemart/assets/images/vm_menulogo.png" alt="Cart" style="text-align:center"/> 
+                                <img src="components/com_virtuemart/assets/images/vm_menulogo.png" alt="Cart" style="text-align:center;border:0"/> 
                             </a> <br /> <br />
 				<h2><?php echo JText::_('COM_VIRTUEMART_INSTALLATION_WELCOME') ?></h2>
 			</td>
