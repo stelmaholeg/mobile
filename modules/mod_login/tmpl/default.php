@@ -51,14 +51,15 @@ JHtml::_('behavior.keepalive');
 		<input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes"/>
 	</p>-->
 	<?php endif; ?>
-    <a style="margin-right:50px;" href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>"> <?php echo JText::_('MOD_LOGIN_FORGOT_YOUR_PASSWORD'); ?></a>
-    <input type="submit" name="Submit" class="addtocart-button" value="<?php echo JText::_('JLOGIN') ?>" onclick="if(validateLogin(this) != true) { makered(this); return false;} else {makegreen(this); return true;}" />
+    <a title="" style="margin-right:50px;" href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>"> <?php echo JText::_('MOD_LOGIN_FORGOT_YOUR_PASSWORD'); ?></a>
+        <input type="submit" name="Submit" class="addtocart-button" value="<?php echo JText::_('JLOGIN') ?>" onclick="if(validateLogin(this) != true) { makered(this); return false;} else {makegreen(this); return true;}" />
 	<input type="hidden" name="option" value="com_users" />
-    <input type="hidden" name="remember" value="yes" />
+        <input type="hidden" name="remember" value="yes" />
 	<input type="hidden" name="task" value="user.login" />
 	<input type="hidden" name="return" value="<?php echo $return; ?>" />
 	<?php echo JHtml::_('form.token'); ?>
 	</fieldset>
+    
     <script type="text/javascript">
         function makered(el){
             jQuery(el).parent().find("#modlgn-username").attr('style','border:solid 1px #F90000 !important');
@@ -83,24 +84,24 @@ JHtml::_('behavior.keepalive');
             return elres;
         };
     </script>
-	<ul>
-		<!--<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
-			<?php echo JText::_('MOD_LOGIN_FORGOT_YOUR_PASSWORD'); ?></a>
-		</li>-->
-		<!--<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>">
-			<?php echo JText::_('MOD_LOGIN_FORGOT_YOUR_USERNAME'); ?></a>
-		</li>-->
+	<!--ul>
+		<li>
+			<a href="<?php// echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
+			<?php //echo JText::_('MOD_LOGIN_FORGOT_YOUR_PASSWORD'); ?></a>
+		</li>
+		<li>
+			<a href="<?php// echo JRoute::_('index.php?option=com_users&view=remind'); ?>">
+			<?php// echo JText::_('MOD_LOGIN_FORGOT_YOUR_USERNAME'); ?></a>
+		</li>
 		<?php
-		$usersConfig = JComponentHelper::getParams('com_users');
-		if ($usersConfig->get('allowUserRegistration')) : ?>
-		<!--<li>
-			<a href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
-				<?php echo JText::_('MOD_LOGIN_REGISTER'); ?></a>
-		</li>-->
-		<?php endif; ?>
-	</ul>
+		//$usersConfig = JComponentHelper::getParams('com_users');
+		//if ($usersConfig->get('allowUserRegistration')) : ?>
+		<li>
+			<a href="<?php// echo JRoute::_('index.php?option=com_users&view=registration'); ?>">
+				<?php// echo JText::_('MOD_LOGIN_REGISTER'); ?></a>
+		</li>
+		<?php //endif; ?>
+	</ul-->
 	<?php if ($params->get('posttext')): ?>
 		<div class="posttext">
 		<p><?php echo $params->get('posttext'); ?></p>

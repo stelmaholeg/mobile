@@ -46,7 +46,7 @@ if ($lang->isRTL() && $myrtl == 0) {
 <!-- Show Image -->
 <?php if (isset($this->newsfeed->image['url']) && isset($this->newsfeed->image['title']) && $this->params->get('show_feed_image')) : ?>
 <div>
-		<img alt="" src="<?php echo $this->newsfeed->image['url']; ?>" alt="<?php echo $this->newsfeed->image['title']; ?>" />
+		<img src="<?php echo $this->newsfeed->image['url']; ?>" alt="<?php echo $this->newsfeed->image['title']; ?>" />
 </div>
 <?php endif; ?>
 

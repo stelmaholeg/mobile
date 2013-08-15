@@ -213,7 +213,7 @@ function generateWebColors() {
 		return;
 
 	// TODO: VoiceOver doesn't seem to support legend as a label referenced by labelledby.
-	h += '<div role="listbox" aria-labelledby="webcolors_title" tabindex="0"><table role="presentation" border="0" cellspacing="1" cellpadding="0">'
+	h += '<div role="listbox" aria-labelledby="webcolors_title" tabindex="0"><table role="presentation" style="border:0" cellspacing="1" cellpadding="0">'
 		+ '<tr>';
 
 	for (i=0; i<colors.length; i++) {

@@ -9,7 +9,7 @@ $fav_sharelists = mod_virtuemart_favorite_sharelist::getsharelist($num_lists);
 if (count($fav_sharelists) == 0) { echo JText::_('VM_SHARED_NOSH');}
 else {
 ?>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<table style="border:0" cellpadding="0" cellspacing="0" width="100%">
 <?php
   foreach ($fav_sharelists as $fav_sharelist) {
       if ($i == 0) {

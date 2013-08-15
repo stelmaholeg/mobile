@@ -42,7 +42,7 @@ else {
             $i = 0;
             foreach ($products as $product) :
                 if (!empty($product->images[0]))
-                    $image = $product->images[0]->displayMediaThumb('class="featuredProductImage" border="0" style="height:80px;"', false);
+                    $image = $product->images[0]->displayMediaThumb('class="featuredProductImage" style="height:80px;border:0"', false);
                 else $image = ''; ?>
             <?php if($i==0) { $i=1; $first = "first";} else {$first = "";} ?>
             <li class="vm-item <?php echo $first; ?> <?php echo $pwidth ?> <?php echo $float ?>" style="width:144px; padding:0;">

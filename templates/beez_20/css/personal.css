@@ -19,7 +19,7 @@ body{background:url(images/new/background-top.png) repeat-x;color:#333;font-fami
 .town-selector{font-size:18pt;color:#1389cc}
 .hdiv{height:80px;display:inline-block}
 .hdiv a{font-size:14px}
-.show-login-form{color:#666;font-weight:bold;font-size:13px;text-decoration:none}
+.show-login-form{color:#666;font-weight:700;font-size:13px;text-decoration:none}
 .show-registr-form{color:#666;font-size:13px;font-weight:normal;margin-right:10px;text-decoration:none}
 .hdiv.float-left{color:#666;font-size:15px}
 .float-left{float:left}
@@ -167,6 +167,7 @@ ul#thumbs img{float:left;line-height:80px}
 .horiz-news li div.img{float:left;width:105px;margin:5px}
 #m-news{border:solid 1px #E4E4E4;margin-top:18px}
 #m-news > div.m-news-title{font-family:"Didact Gothic",sans-serif;height:29px;background:#E4E4E4;font-size:16px;color:#555;padding-left:20px;padding-top:5px}
+.m-news-title h3{margin:0;float:left;font-size:16px;font-weight:100}
 .m-news-title h2{margin:0;font-size:16px;font-weight:100;float:left}
 #m-news .category-module li,.m-akcii .category-module li{border:none}
 #m-news a.mod-articles-category-title,#m-news a.mod-articles-category-title:link,#m-news a.mod-articles-category-title:active,#m-news a.mod-articles-category-title:hover,#m-news a.mod-articles-category-title:visited{color:#555;font-size:13px;text-decoration:none}

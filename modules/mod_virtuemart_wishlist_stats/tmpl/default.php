@@ -9,7 +9,7 @@ $fav_stats = mod_virtuemart_favorite_stats::getstats($num_prodstat);
 if (count($fav_stats) == 0) { echo JText::_('VM_STATS_NOST');}
 else {
 ?>
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<table style="border:0" cellpadding="0" cellspacing="0" width="100%">
 <?php
   foreach ($fav_stats as $fav_stat) {
       if ($i == 0) {

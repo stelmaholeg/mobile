@@ -61,13 +61,8 @@ if ($this->direction == 'rtl') {
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
 <?php if ($color=="personal") : ?>
     <style type="text/css">
-        #line {
-            width:98% ;
-        }
-        #header ul.menu {
-            display:block !important;
-            width:98.2% ;
-        }
+        #line{width:98%}
+        #header ul.menu{display:block !important;width:98.2%}
     </style>
 <?php endif; ?>
 <![endif]-->
@@ -159,9 +154,9 @@ ul{list-style:none;margin:0;padding:0}
             <?php
                 $user = JFactory::getUser();
                 if (!$user->id){ ?>
-                <a title="" href="#" class="show-login-form didact"><b>Вход на сайт</b></a>&nbsp;|&nbsp;<a title="" href="index.php?option=com_users&view=registration" class="show-registr-form didact">Регистрация</a>
+                <a title="" href="#" class="show-login-form didact">Вход на сайт</a>&nbsp;|&nbsp;<a title="" href="index.php?option=com_users&view=registration" class="show-registr-form didact">Регистрация</a>
             <?php } else { ?>
-                <span class="didact" style="color:black; margin-right:10px;">Добро пожаловать, <a style="margin-right:10px" class="current_town" href="index.php?option=com_virtuemart&view=user&layout=edit"><?php echo $user->username; ?></a></span>
+                <span class="didact" style="color:#000;margin-right:10px">Добро пожаловать, <a style="margin-right:10px" class="current_town" href="index.php?option=com_virtuemart&view=user&layout=edit"><?php echo $user->username; ?></a></span>
                 <a title="" class="current_town" href="index.php?option=com_users&task=user.logout&<?php echo JSession::getFormToken().'=1'; ?>">Выход</a>
             <?php } ?>
                 </div>

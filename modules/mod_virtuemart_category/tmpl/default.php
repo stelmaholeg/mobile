@@ -38,7 +38,7 @@ $js="jQuery(document).ready(function() {
         <div class="mid-mhead">Категории товаров</div>
         <div class="rig-mhead"></div>
     </div>
-    <ul class="VMmenu<?php echo $class_sfx ?>" ID="<?php echo "VMmenu".$ID ?>" >
+    <ul class="VMmenu<?php echo $class_sfx ?>" id="<?php echo "VMmenu".$ID ?>" >
     <?php foreach ($categories as $category) {
             $active_menu = 'class="VmClose"';
             $caturl = JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='.$category->virtuemart_category_id);

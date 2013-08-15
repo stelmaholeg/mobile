@@ -42,7 +42,7 @@ if(!$array[0]){
         $post = null;
     }
     echo "<form method='POST' action='/index.php?option=com_virtuemart&view=category&virtuemart_category_id=".$catid."' id='filters'>"; ?>
-	<table border="0" cellpadding="0" cellspacing="0" style="width:188px;">
+	<table cellpadding="0" cellspacing="0" style="width:188px;border:0">
     
 
     <?php if(isset($_REQUEST['f'])){

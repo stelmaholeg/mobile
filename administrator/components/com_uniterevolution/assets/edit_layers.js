@@ -648,7 +648,7 @@ var UniteLayersRev = new function(){
 		//add layer specific html
 		switch(type){
 			case "image":
-				html += '<img alt="" src="'+objLayer.image_url+'" alt="'+objLayer.text+'"/>';
+				html += '<img src="'+objLayer.image_url+'" alt="'+objLayer.text+'"/>';
 			break;
 			default:
 			case "text":

@@ -194,7 +194,7 @@ class plgVmpaymentAuthorizenet extends vmPSPlugin {
 
 		$cvv_images = $this->_displayCVVImages($method);
 		$html .= '<br /><span class="vmpayment_cardinfo">' . JText::_('VMPAYMENT_AUTHORIZENET_COMPLETE_FORM') . $sandbox_msg . '
-		    <table border="0" cellspacing="0" cellpadding="2" width="100%">
+		    <table style="border:0;width:100%" cellspacing="0" cellpadding="2">
 		    <tr valign="top">
 		        <td nowrap width="10%" align="right">
 		        	<label for="creditcardtype">' . JText::_('VMPAYMENT_AUTHORIZENET_CCTYPE') . '</label>

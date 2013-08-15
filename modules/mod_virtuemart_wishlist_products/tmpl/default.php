@@ -12,7 +12,7 @@ else {
 	else {
 ?>
 <!--
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<table style="border:0" cellpadding="0" cellspacing="0" width="100%">
 <?php
 
   foreach ($fav_products as $fav_product) {

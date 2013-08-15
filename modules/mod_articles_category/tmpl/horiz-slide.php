@@ -14,10 +14,10 @@ defined('_JEXEC') or die;
 <div class="m-news-title">
     <?php $ids = implode(',',json_decode($module->params)->catid); ?>
     <?php if($ids == "10"){ ?>
-    Акции
+    <h3>Акции</h3>
     <?php } ?>
     <?php if($ids == "8"){ ?>
-    Новости
+    <h3>Новости</h3>
     <?php } ?>
     <div class="didact" style="float:right;margin-right:20px;margin-top:0">
         <?php if($ids == "10"){ ?>
@@ -27,6 +27,7 @@ defined('_JEXEC') or die;
         <a title="Перейти к просмотру всех новостей" class="didact hover-on-underline" style="color:#888;text-decoration:none" href="/novosti">все новости</a>
         <?php } ?>
     </div>
+    <div class="clear"></div>
 </div>
 <ul class="category-module horiz-news<?php echo $moduleclass_sfx; ?>" style="width:770px">
 	<?php $i=0;
@@ -36,11 +37,11 @@ defined('_JEXEC') or die;
 	    <!--li style="" commit oleg-->
             <div class="sh-block">
                 <?php if ($params->get('link_titles') == 1) : ?>
-                <h3>
+                <h4>
                     <a title="Перейти к прочтению &quot;<?php echo $item->title; ?>&quot;" class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
-                </h3>
+                </h4>
                 <?php else :?>
-                <h3><?php echo $item->title; ?></h3>
+                <h4><?php echo $item->title; ?></h4>
                 <?php endif; ?>
             </div>
             <div class="img">
