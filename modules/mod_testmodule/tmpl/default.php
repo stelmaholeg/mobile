@@ -124,32 +124,6 @@ if(!$array[0]){
     echo "</form>";
 ?>
 </div>
-<style type="text/css">
-    .dem{
-        padding: 0px 20px;
-    }
-    #slider-range, .dem > div{
-        margin: 10px 0px 0px !important;
-        height: 12px !important;
-        overflow: visible !important;
-    }
-    .ui-slider-handle{
-        background:#3994C0;
-        width:10px !important;
-        height:10px !important;
-    }
-    .ui-slider-range{
-        height:4px !important;
-        background:#CCCCCC !important;
-    }
-    #amount{
-        color:#6ABB30 !important;
-        width:100% !important;
-        text-align: center !important;
-        font-size:12px !important;
-        background:#F6F6F6;
-    }
-</style>
 <script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery(function() {

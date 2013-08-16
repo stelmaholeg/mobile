@@ -79,3 +79,8 @@ a.show-registr-form:hover,a.show-login-form:hover{color:#000;text-decoration:und
 .advertising_blocks a{display:block;margin-left:5px}
 .first-block-adver{margin-left:0}
 .advertising_blocks img{height:220px;width:180px}
+.dem{padding: 0px 20px}
+#slider-range, .dem > div{margin: 10px 0px 0px !important;height: 12px !important;overflow: visible !important; }
+.ui-slider-handle{background:#3994C0;width:10px !important;height:10px !important;}
+.ui-slider-range{height:4px !important;background:#CCCCCC !important;}
+#amount{color:#6ABB30 !important;width:100% !important;text-align: center !important;font-size:12px !important;background:#F6F6F6;}
