@@ -232,7 +232,7 @@ if (!empty($this->products)) {
 		$span_class  = "";
 		if(in_array($product->virtuemart_product_id,$populardata)){ if(!$is_new){ $span_class = "b-hit"; } else { $span_class = "b-new";} } else { if($is_new){ $span_class = "b-new"; } }
 		if($oldprice != $price){ $span_class = "b-akc"; } ?>
-		<?php echo "<div style='display:none'>".json_encode($product)."</div>" ?>
+		<?php echo '<div style="display:none">'.json_encode($product).'</div>' ?>
             <span class="<?php echo $span_class; ?>"></span>
 		<!--END : SPAN AKC HIT NEW-->
             <div style="margin:10px 10px 15px;text-align:center;height:30px;font-size:12px" class="vm-item-title">

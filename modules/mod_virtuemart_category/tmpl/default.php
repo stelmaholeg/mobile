@@ -29,7 +29,7 @@ $js="jQuery(document).ready(function() {
 
     <?php $active = JFactory::getApplication()->getMenu()->getActive();
     if($active->alias != "home"){ ?>
-        <style type="text/css">.menu-opener{top:34px}</style>
+<style type="text/css">.menu-opener{top:34px}</style>
     <?php } ?>
 
 <div class="<?php echo $hovclass?> <?php //echo $active->alias; ?>">
