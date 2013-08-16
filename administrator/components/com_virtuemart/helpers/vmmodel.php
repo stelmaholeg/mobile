@@ -709,7 +709,7 @@ class VmPagination extends JPagination {
 	// 			vmdebug('getLimitBox',$this->_perRow);
 			}
 			$selected= JRoute::_( $link.'&limit='. $selected) ;
-			$js = 'onchange="window.top.location.href=this.options[this.selectedIndex].value">';
+			$js = 'onchange="window.top.location.href=this.options[this.selectedIndex].value"';
 
 			$html = JHTML::_('select.genericlist',  $limits, '', 'class="inputbox" size="1" '.$js , 'value', 'text', $selected);
 		}

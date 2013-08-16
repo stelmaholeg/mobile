@@ -184,7 +184,7 @@ if (!empty($this->products)) {
         <div class="clear"></div>
     </div> <!-- end of orderby-displaynumber -->
 
-    <h1 style="display:none;"><?php echo $this->category->category_name; ?></h1>
+    <h1 style="display:none"><?php echo $this->category->category_name; ?></h1>
 
     <?php
 // Category and Columns Counter
@@ -214,7 +214,7 @@ if (!empty($this->products)) {
 
         // this is an indicator wether a row needs to be opened or not
         if ($iBrowseCol == 1) { ?>
-	<div class="row" style="margin-left:-18px;">
+	<div class="row" style="margin-left:-18px">
 	<?php }
 
         // Show the vertical seperator
@@ -235,12 +235,12 @@ if (!empty($this->products)) {
 		<?php echo "<div style='display:none'>".json_encode($product)."</div>" ?>
             <span class="<?php echo $span_class; ?>"></span>
 		<!--END : SPAN AKC HIT NEW-->
-            <div style="margin: 10px 10px 15px; text-align: center; height:30px; font-size:12px;" class="vm-item-title">
+            <div style="margin:10px 10px 15px;text-align:center;height:30px;font-size:12px" class="vm-item-title">
                 <?php echo JHTML::link($product->link, $product->product_name); ?>
             </div>
 
-            <div style="width:100%; height:155px; text-align: center;">
-				<?php echo '<a style="display:block; width:100%; height:100%;" href="' . $product->link . '">'; ?>
+            <div style="width:100%;height:155px;text-align:center">
+				<?php echo '<a style="display:block;width:100%;height:100%;" href="' . $product->link . '">'; ?>
                 <?php //echo $product->images[0]->displayMediaThumb('class="browseProductImage" style="border:0" title="'.$product->product_name.'" ',true,'class="modal"'); ?>
 				<?php echo $product->images[0]->displayMediaThumb('class="browseProductImage" style="border:0" title="'.$product->product_name.'" ',false,''); ?>
 				<?php echo '</a>'; ?>
@@ -263,29 +263,29 @@ if (!empty($this->products)) {
             </div>
                 <?php
                     } else { ?>
-            <div style="height:27px; width:100%;">
-                <p style="margin:0; text-align:center; color:#373737;">
+            <div style="height:27px;width:100%">
+                <p style="margin:0;text-align:center;color:#373737;">
                     Cтарая цена: <span style="color: #F90000;"><del><?php echo round($product->prices['priceWithoutTax'],0,PHP_ROUND_HALF_UP); ?> руб.</del></span>
                 </p>
             </div>
-            <div style="height:27px; width:100%;">
-                <p style="margin:0; text-align:center; color:#474747;">
-                    Цена: <span style="color: #3F8F03; font-weight:bold; font-size:18px;"><?php echo round($product->prices['salesPrice'],0,PHP_ROUND_HALF_UP); ?> руб.</span>
+            <div style="height:27px;width:100%">
+                <p style="margin:0;text-align:center;color:#474747;">
+                    Цена: <span style="color:#3F8F03;font-weight:bold;font-size:18px;"><?php echo round($product->prices['salesPrice'],0,PHP_ROUND_HALF_UP); ?> руб.</span>
                 </p>
             </div>
                   <?php } ?>
             <div class="addtocart-area" style="display:block; width:250px;">
                 <form action="index.php" class="product" method="post">
                     <div class="addtocart-bar">
-                        <input type="submit" style="display:inline-block; padding-bottom:2px;" title="В корзину" value="В корзину" class="addtocart-button" name="addtocart">
+                        <input type="submit" style="display:inline-block; padding-bottom:2px;" title="В корзину" value="В корзину" class="addtocart-button" name="addtocart"/>
                     </div>
-                    <input type="hidden" value="<?php echo $product->product_name; ?>" class="pname">
-                    <input type="hidden" value="com_virtuemart" name="option">
-                    <input type="hidden" value="cart" name="view">
+                    <input type="hidden" value="<?php echo $product->product_name; ?>" class="pname"/>
+                    <input type="hidden" value="com_virtuemart" name="option"/>
+                    <input type="hidden" value="cart" name="view"/>
                     <!--noscript>&lt;input type="hidden" name="task" value="add" /&gt;</noscript-->
-                    <noscript><input type="hidden" name="task" value="add" /></noscript>
-                    <input type="hidden" value="<?php echo $product->virtuemart_product_id; ?>" name="virtuemart_product_id[]">
-                    <input type="hidden" value="<?php echo $product->virtuemart_category_id; ?>" name="virtuemart_category_id[]">
+                    <noscript><input type="hidden" name="task" value="add"/></noscript>
+                    <input type="hidden" value="<?php echo $product->virtuemart_product_id; ?>" name="virtuemart_product_id[]"/>
+                    <input type="hidden" value="<?php echo $product->virtuemart_category_id; ?>" name="virtuemart_category_id[]"/>
                 </form>
             </div>
             <div class="add-to-fav" style="text-align:center;white-space:nowrap;width:250px;margin-top:5px"><?php require(JPATH_BASE.DS."components/com_wishlist/template/addtofavorites_form.tpl.php"); ?></div>
@@ -312,9 +312,9 @@ if (!empty($this->products)) {
     <?php
     }
     ?>
-    <div style="width:775px; height:27px; margin-top:15px; margin-bottom:34px;">
+    <div style="width:775px;height:27px;margin-top:15px;margin-bottom:34px;">
         <div class="round-left-27"></div>
-        <div style="float:left; width:745px; height:27px; background: url('/templates/beez_20/css/images/new/round-center-27.png') repeat-x;" class="didact">
+        <div style="float:left; width:745px; height:27px;background:url('/templates/beez_20/css/images/new/round-center-27.png') repeat-x;" class="didact">
             <div class="floatleft" style="margin-left:10px;">
                 <?php echo $this->orderByList['orderby']; ?>
             </div>

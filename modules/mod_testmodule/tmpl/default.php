@@ -41,7 +41,7 @@ if(!$array[0]){
     } else {
         $post = null;
     }
-    echo "<form method='POST' action='/index.php?option=com_virtuemart&view=category&virtuemart_category_id=".$catid."' id='filters'>"; ?>
+    echo "<form method=\"post\" action='/index.php?option=com_virtuemart&view=category&virtuemart_category_id=".$catid."' id='filters'>"; ?>
 	<table cellpadding="0" cellspacing="0" style="width:188px;border:0">
     
 
@@ -68,8 +68,8 @@ if(!$array[0]){
         </tr>
         <tr>
             <td colspan="2">
-                <input id="famount" name="famount" type="hidden" value="<?php echo isset($_REQUEST['famount']) ? $_REQUEST['famount'] : 0;?>">
-                <input id="tamount" name="tamount" type="hidden" value="<?php echo isset($_REQUEST['tamount']) ? $_REQUEST['tamount'] : 50000;?>">
+                <input id="famount" name="famount" type="hidden" value="<?php echo isset($_REQUEST['famount']) ? $_REQUEST['famount'] : 0;?>"/>
+                <input id="tamount" name="tamount" type="hidden" value="<?php echo isset($_REQUEST['tamount']) ? $_REQUEST['tamount'] : 50000;?>"/>
                 <a class="vmorder-link" style="margin-left: 127px; margin-top: 0px; display:block; margin-bottom:5px;" href="#" onclick='javascript: document.forms["filters"].submit(); return false;'>Показать</a>
             </td>
         </tr>
@@ -111,7 +111,7 @@ if(!$array[0]){
                     //echo "<div class='checkbox'></div><input type='checkbox' name='f[".$el->virtuemart_custom_id."][".$posti."]' value='".$el->custom_value."' ".$checked." onclick='javascript: document.forms[\"filters\"].submit();' ></td><td>Не указано<br/>";
 					echo "</td><td>";
                 } else {
-                    echo "<div class='checkbox'></div><input type='checkbox' name='f[".$el->virtuemart_custom_id."][".$posti."]' value='".$el->custom_value."' ".$checked." onclick='javascript: document.forms[\"filters\"].submit();'></td><td>" . $el->custom_value . "";
+                    echo "<div class='checkbox'></div><input type='checkbox' name='f[".$el->virtuemart_custom_id."][".$posti."]' value='".$el->custom_value."' ".$checked." onclick='javascript: document.forms[\"filters\"].submit();'/></td><td>" . $el->custom_value . "";
                 }
                 $posti += 1;
                 echo "</td></tr>";

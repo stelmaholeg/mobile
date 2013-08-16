@@ -38,7 +38,7 @@ $product_ord = $product_qty > 0 ? $product_qty : 1;
 $url_favlist=JRoute::_("index.php?option=com_wishlist&view=favoriteslist&Itemid={$itemid}");
 
 //generate button to remove from favorites list
-$form_deletefavorite = "<form action='". $url_favlist ."' method='POST' name='deletefavo' id='". uniqid('deletefavo_') ."'>\n
+$form_deletefavorite = "<form action='". $url_favlist ."' method=\"post\" name='deletefavo' id='". uniqid('deletefavo_') ."'>\n
 <input type='submit' style='margin-left:18px; cursor:pointer;' class='deletefav_button' value='".JText::_('VM_REMOVE_FAVORITE')."' title='".JText::_('VM_REMOVE_FAVORITE')."' onclick=\"return confirm('".JText::_('VM_REMOVEFAV_CONFIRM')."')\" />
 <input type='hidden' name='mode' value='delete' />\n
 <input type='hidden' name='fav_id' value='". $dataItem->fav_id ."' />\n
