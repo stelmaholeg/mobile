@@ -1399,7 +1399,7 @@ function getOrderByList($virtuemart_category_id=false) {
 
 				if ($field == $orderbyCfg) $link = JRoute::_($fieldLink.$manufacturerTxt ) ;
 				else $link = JRoute::_($fieldLink.$manufacturerTxt.'&orderby='.$field ) ;
-				$orderByLink .='&nbsp&nbsp|&nbsp&nbsp<a class="vmorder-link" title="'.$text.'" href="'.$link.'">'.$text.'</a>';
+				$orderByLink .='&nbsp;&nbsp;|&nbsp;&nbsp;<a class="vmorder-link" title="'.$text.'" href="'.$link.'">'.$text.'</a>';
 			}
 		}
 	}

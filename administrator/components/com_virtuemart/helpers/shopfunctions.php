@@ -579,7 +579,7 @@ class ShopFunctions {
 			$useXHTTML = empty($this->useXHTML) ? true:$this->useXHTML;
 			$useSSL = empty($this->useSSL) ? false:$this->useSSL;
 
-        $addLink = '<a class="current_town" href="'.JRoute::_('index.php?option=com_virtuemart&view=user&task='.$task.'&new=1&addrtype=ST&cid[]='.$userModel->getId(),$useXHTTML,$useSSL) .'"><span class="vmicon vmicon-16-editadd"></span> ';
+        $addLink = '<a title="" class="current_town" href="'.JRoute::_('index.php?option=com_virtuemart&view=user&task='.$task.'&new=1&addrtype=ST&cid[]='.$userModel->getId(),$useXHTTML,$useSSL) .'"><span class="vmicon vmicon-16-editadd"></span> ';
 		$addLink .= JText::_('COM_VIRTUEMART_USER_FORM_ADD_SHIPTO_LBL').'</a>';
 
 			return $addLink.'<ul>' . join('', $_shipTo) . '</ul>';

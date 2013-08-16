@@ -57,9 +57,9 @@
 				$joomlaLoginUrl = 'index.php?option=com_users&view=login';
 				$finalUrl = $joomlaLoginUrl . $redirectUrl;
 				if ( $user_id > 0 ) {
-					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" alt="Login" title="Login"><input style="cursor:pointer;" type="submit" class="addtofav_button" value="'.JText::_('VM_ADD_TO_FAVORITES').'&nbsp;" name="addtofavorites" title="'.JText::_('VM_ADD_TO_FAVORITES').'" /></a>';
+					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" title="Login"><input style="cursor:pointer;" type="submit" class="addtofav_button" value="'.JText::_('VM_ADD_TO_FAVORITES').'&nbsp;" name="addtofavorites" title="'.JText::_('VM_ADD_TO_FAVORITES').'" /></a>';
 				} else {
-					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" alt="Login" title="Login"><input style="cursor:pointer;" type="submit" class="addtofav_button" value="Добавить в лист желаний&nbsp;" name="addtofavorites" title="'.JText::_('VM_ADD_TO_FAVORITES').'" /></a>';
+					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" title="Login"><input style="cursor:pointer;" type="submit" class="addtofav_button" value="Добавить в лист желаний&nbsp;" name="addtofavorites" title="'.JText::_('VM_ADD_TO_FAVORITES').'" /></a>';
 				}
 				if ( $user_id > 0 ) {
 					$addtofavorites = '<div class="addtofavorites"><form class="addtofavs" method="post" action="'.$url_fav.'" name="addtofavorites" id="addtofavorites_'.$product_id.'">';

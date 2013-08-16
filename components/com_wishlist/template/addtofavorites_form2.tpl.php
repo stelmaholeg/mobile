@@ -57,10 +57,10 @@
 				$joomlaLoginUrl = 'index.php?option=com_users&view=login';
 				$finalUrl = $joomlaLoginUrl . $redirectUrl;
 				if ( $user_id > 0 ) {
-					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" alt="Login" title="Login">
+					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" title="Login">
 					<input style="cursor:pointer;" type="submit" class="addtofav_button" style="min-width:auto;" value="В лист желаний&nbsp;" name="addtofavorites" title="'.JText::_('VM_ADD_TO_FAVORITES').'" /></a>';
 				} else {
-					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" alt="Login" title="Login">
+					$addtofavorites = '<a class="show-login-form" href="'.$finalUrl.'" title="Login">
 					<div class="addtofav_button" onclick ="return false;" style="padding-left: 27px; margin-left: -14px; margin-top:0; background-position:5px 10px; height: 32px; padding-top: 4px;">'.JText::_('VM_ADD_TO_FAVORITES').'</div>
 					<!--<input style="cursor:pointer;" type="submit" class="addtofav_button" value="В лист желаний&nbsp;" name="addtofavorites" title="'.JText::_('VM_ADD_TO_FAVORITES').'" style="min-width:auto;" />-->
 					</a>';

@@ -28,12 +28,12 @@ $user		= JFactory::getUser();
 } ?>
 <?php if ($params->get('show_title')) : ?>
 	<h2>
-	<?php if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
-		<!--<a class="current_town" href="<?php echo $this->item->readmore_link; ?>">-->
-		<?php echo $this->escape($this->item->title); ?></a>
-	<!--<?php else : ?>
+	<?php //if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
+		<!--<a title="" class="current_town" href="<?php //echo $this->item->readmore_link; ?>">-->
 		<?php echo $this->escape($this->item->title); ?>
-	<?php endif; ?>-->
+	<!--<?php// else : ?>
+		<?php //echo $this->escape($this->item->title); ?>
+	<?php //endif; ?>-->
 	</h2>
 <?php endif; ?>
 
