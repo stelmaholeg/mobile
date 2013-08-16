@@ -279,7 +279,7 @@ if (VmConfig::get('ask_question', 1) == '1') {
     // }
 ?>
 
-<script>
+<script type="text/javascript">
     jQuery(document).ready(function() {
         jQuery( "#product-tab-detail" ).tabs();
     });

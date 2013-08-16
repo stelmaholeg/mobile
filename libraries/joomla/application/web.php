@@ -557,7 +557,7 @@ class JApplicationWeb
 		// If the headers have already been sent we need to send the redirect statement via JavaScript.
 		if ($this->checkHeadersSent())
 		{
-			echo "<script>document.location.href='$url';</script>\n";
+			echo "<script type="text/javascript">document.location.href='$url';</script>\n";
 		}
 		else
 		{
@@ -566,7 +566,7 @@ class JApplicationWeb
 			{
 				$html = '<html><head>';
 				$html .= '<meta http-equiv="content-type" content="text/html; charset=' . $this->charSet . '" />';
-				$html .= '<script>document.location.href=\'' . $url . '\';</script>';
+				$html .= '<script type="text/javascript">document.location.href=\'' . $url . '\';</script>';
 				$html .= '</head><body></body></html>';
 
 				echo $html;

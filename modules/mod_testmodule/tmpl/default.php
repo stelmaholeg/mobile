@@ -150,7 +150,7 @@ if(!$array[0]){
         background:#F6F6F6;
     }
 </style>
-<script>
+<script type="text/javascript">
     jQuery(document).ready(function(){
         jQuery(function() {
             jQuery( "#slider-range" ).slider({

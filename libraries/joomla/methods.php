@@ -115,7 +115,7 @@ class JText
 	 * Translates a string into the current language.
 	 *
 	 * Examples:
-	 * <script>alert(Joomla.JText._('<?php echo JText::_("JDEFAULT", array("script"=>true));?>'));</script>
+	 * <script type="text/javascript">alert(Joomla.JText._('<?php echo JText::_("JDEFAULT", array("script"=>true));?>'));</script>
 	 * will generate an alert message containing 'Default'
 	 * <?php echo JText::_("JDEFAULT");?> it will generate a 'Default' string
 	 *
@@ -206,7 +206,7 @@ class JText
 	 * script is a boolean to indicate that the string will be push in the javascript language store.
 	 *
 	 * Examples:
-	 * <script>alert(Joomla.JText._('<?php echo JText::plural("COM_PLUGINS_N_ITEMS_UNPUBLISHED", 1, array("script"=>true));?>'));</script>
+	 * <script type="text/javascript">alert(Joomla.JText._('<?php echo JText::plural("COM_PLUGINS_N_ITEMS_UNPUBLISHED", 1, array("script"=>true));?>'));</script>
 	 * will generate an alert message containing '1 plugin successfully disabled'
 	 * <?php echo JText::plural("COM_PLUGINS_N_ITEMS_UNPUBLISHED", 1);?> it will generate a '1 plugin successfully disabled' string
 	 *

@@ -10,7 +10,7 @@
 defined('_JEXEC') or die;
 ?>
 
-<script>
+<script type="text/javascript">
 var form = window.top.document.adminForm
 var title = form.title.value;
 
@@ -19,11 +19,11 @@ var alltext = window.top.<?php echo $this->editor->getContent('text') ?>;
 
 <table class="center" width="90%">
 	<tr>
-		<td class="contentheading" colspan="2"><script>document.write(title);</script></td>
+		<td class="contentheading" colspan="2"><script type="text/javascript">document.write(title);</script></td>
 	</tr>
 <tr>
 	<td valign="top" height="90%" colspan="2">
-		<script>document.write(alltext);</script>
+		<script type="text/javascript">document.write(alltext);</script>
 	</td>
 </tr>
 </table>

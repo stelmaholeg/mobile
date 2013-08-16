@@ -294,7 +294,7 @@ if (empty($this->product)) {
     // echo JHTMl::_('link', $link, $file->file_title.$filesize_display, array('target' => $target));
     // }
 ?>
-<script>
+<script type="text/javascript">
     jQuery(document).ready(function() {
         jQuery( "#product-tab-detail" ).tabs();
     });

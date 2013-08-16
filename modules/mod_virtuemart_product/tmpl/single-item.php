@@ -31,7 +31,7 @@ else {
                 display:block;
             }
         </style>
-        <script>
+        <script type="text/javascript">
             jQuery(function(){
                 jQuery("#slides").slides({
                     generatePagination: false,

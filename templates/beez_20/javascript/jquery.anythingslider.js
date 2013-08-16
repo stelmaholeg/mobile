@@ -37,7 +37,7 @@
 			base.$el.trigger('before_initialize', base);
 
 			// Add "as-oldie" class to body for css purposes
-			$('<!--[if lte IE 8]><script>jQuery("body").addClass("as-oldie");</script><![endif]-->').appendTo('body').remove();
+			$('<!--[if lte IE 8]><script type="text/javascript">jQuery("body").addClass("as-oldie");</script><![endif]-->').appendTo('body').remove();
 
 			// Cache existing DOM elements for later
 			// base.$el = original ul
