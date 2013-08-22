@@ -41,7 +41,7 @@ if(!$array[0]){
     } else {
         $post = null;
     }
-    echo "<form method=\"post\" action='/index.php?option=com_virtuemart&view=category&virtuemart_category_id=".$catid."' id='filters'>"; ?>
+    echo "<form method=\"post\" action='/index.php?option=com_virtuemart&amp;view=category&amp;virtuemart_category_id=".$catid."' id='filters'>"; ?>
 	<table cellpadding="0" cellspacing="0" style="width:188px;border:0">
     
 

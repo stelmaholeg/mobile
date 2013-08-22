@@ -177,7 +177,7 @@ if (!empty($this->products)) {
 			<div style="float:right;" class="items-on-page"><?php echo $this->vmPagination->getLimitBox(); ?></div>
             <div class="showall" style="float: right; margin-top: 6px; margin-right:10px;">
                 <?php $catid = JRequest::getInt('virtuemart_category_id'); ?>
-                <?php echo "<a class='vmorder-link' href='/index.php?option=com_virtuemart&view=category&virtuemart_category_id=".$catid."'>Показать все</a>"; ?>
+                <?php echo "<a class='vmorder-link' href='/index.php?option=com_virtuemart&amp;view=category&amp;virtuemart_category_id=".$catid."'>Показать все</a>"; ?>
             </div>
         </div>
         <div class="round-right-27"></div>
@@ -325,7 +325,7 @@ if (!empty($this->products)) {
             <div style="float:right;" class="items-on-page"><?php echo $this->vmPagination->getLimitBox(); ?></div>
             <div class="showall" style="float: right; margin-top: 6px; margin-right:10px;">
                 <?php $catid = JRequest::getInt('virtuemart_category_id'); ?>
-                <?php echo "<a class='vmorder-link' href='/index.php?option=com_virtuemart&view=category&virtuemart_category_id=".$catid."'>Показать все</a>"; ?>
+                <?php echo "<a class='vmorder-link' href='/index.php?option=com_virtuemart&amp;view=category&amp;virtuemart_category_id=".$catid."'>Показать все</a>"; ?>
             </div>
         </div>
         <div class="round-right-27"></div>
