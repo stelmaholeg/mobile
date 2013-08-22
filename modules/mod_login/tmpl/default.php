@@ -72,9 +72,9 @@ JHtml::_('behavior.keepalive');
         function validateLogin(el){
             var elres = false;
             jQuery.ajax({
-                url: '/index.php?option=com_users&task=chekloginpass&format=row&username='+
+                url: '/index.php?option=com_users&amp;task=chekloginpass&amp;format=row&amp;username='+
                         jQuery(el).parent().find('#modlgn-username').val()+
-                        '&passwd='+
+                        '&amp;passwd='+
                         jQuery(el).parent().find('#modlgn-passwd').val(),
                 async:false,
                 success:function(data){

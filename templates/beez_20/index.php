@@ -50,9 +50,9 @@ if ($this->direction == 'rtl') {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Prosto+One&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Prosto+One&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css' />
 
 <meta http-equiv="X-UA-Compatible" content="IE=100" /> <!-- IE9 mode -->
@@ -187,10 +187,10 @@ ul{list-style:none;margin:0;padding:0}
                     <img alt="" src="/images/mobile/facebook.png" />
                     <span class="soc-counter">0</span>
                     <script type="application/x-javascript">
-			   var f_url = "https://graph.facebook.com/105928902896018?fields=members&access_token=AAAHJHcBvSZA4BAH5SAdWcEz6qlKeZCzugRwnwJSCQa1wHsmQYsqCam9QGBl9syGZCyiLUizW6BtEG9kS4VQkCSXo2qFQQbeqTkd8hOOXAZDZD";
+			   var f_url = "https://graph.facebook.com/105928902896018?fields=members&amp;access_token=AAAHJHcBvSZA4BAH5SAdWcEz6qlKeZCzugRwnwJSCQa1wHsmQYsqCam9QGBl9syGZCyiLUizW6BtEG9kS4VQkCSXo2qFQQbeqTkd8hOOXAZDZD";
 
                         jQuery(document).ready(function () {
-                            jQuery.getJSON(f_url + '&callback=?',  function (a) { jQuery('.facebookstyle .soc-counter').html(a.members.data.length); });});
+                            jQuery.getJSON(f_url + '&amp;callback=?',  function (a) { jQuery('.facebookstyle .soc-counter').html(a.members.data.length); });});
                     </script>
                 </div>
 
@@ -340,19 +340,19 @@ ul{list-style:none;margin:0;padding:0}
                         <a title="" href="javascript:" class="show-login-form">Вход для пользователей</a>
                     </li>
                     <li>
-                        <a title="" href="/index.php?option=com_users&view=registration" class="show-registr-form">Зарегистрироваться</a>
+                        <a title="" href="/index.php?option=com_users&amp;view=registration" class="show-registr-form">Зарегистрироваться</a>
                     </li>
 
                     <?php } else { ?>
                     <li>
-                        <a title="" href="index.php?option=com_virtuemart&view=user&layout=edit">Личный кабинет</a>
+                        <a title="" href="index.php?option=com_virtuemart&amp;view=user&layout=edit">Личный кабинет</a>
                     </li>
                     <li>
-                        <a title="" href="index.php?option=com_users&task=user.logout&<?php echo JSession::getFormToken().'=1'; ?>">Выход</a>
+                        <a title="" href="index.php?option=com_users&amp;task=user.logout&<?php echo JSession::getFormToken().'=1'; ?>">Выход</a>
                     </li>
                     <?php } ?>
                     <li>
-                        <a title="" href="index.php?option=com_content&view=article&id=17&Itemid=108#clients">Принципы работы с клиентами</a>
+                        <a title="" href="index.php?option=com_content&amp;view=article&id=17&Itemid=108#clients">Принципы работы с клиентами</a>
                     </li>
                 </ul>
                 <!--<jdoc:include type="modules" name="menu-bottom-2" />-->
@@ -430,7 +430,7 @@ ul{list-style:none;margin:0;padding:0}
         /*
         jQuery('.show-registr-form').click(function(){
             jQuery.colorbox({
-                href:"/index.php?option=com_users&view=registration",
+                href:"/index.php?option=com_users&amp;view=registration",
                 opacity: 0.5,
                 close: 'close'
             });
