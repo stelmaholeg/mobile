@@ -62,7 +62,7 @@ a.show-registr-form:hover,a.show-login-form:hover{color:#000;text-decoration:und
 .header-menu *{z-index:9999 !important}
 #footer h2{font-family:'Ubuntu',sans-serif;font-size:12px}
 #footer ul.menu{font-family:'Ubuntu',sans-serif;font-size:11px}
-.blog-featured{display:none}
+.blog-featured{display:block}
 .news-switcher h3,.news-materials h3{font-family:'Didact Gothic',sans-serif;font-size:17px;padding-bottom:5px;margin-bottom:15px;border-bottom:solid 1px #CCC}
 .news-switcher h3{margin-left:10px}
 .news-materials{font-family:'Ubuntu',sans-serif}

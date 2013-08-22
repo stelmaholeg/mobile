@@ -882,15 +882,11 @@ class vmJsApi{
 		$jsVars .= "closeImage = '".$closeimage."' ; \n";
 		$jsVars .= "Virtuemart.addtocart_popup = '".VmConfig::get('addtocart_popup',1)."' ; \n";
 		// $jsVars .= 'faceboxHtml = \'<div id="facebox" style="display:none"><div class="popup"><div class="content"></div> <a href="#" class="close"><img src="'.$closeimage.'" title="close" alt="X" class="close_image" /></a></div></div>\' '."\n";
-		$jsVars .= 'faceboxHtml = \'<div id="facebox" style="display:none">
-                    <div class="popup">
-                        <div class="content"></div>
-                        <a title="" href="#" class="close"></a>
-                    </div>
-                </div>\' '."\n";
+		$jsVars .= 'faceboxHtml = \'<div id="facebox" style="display:none"><div class="popup"><div class="content"></div><a title="" href="#" class="close"></a></div></div>\'; '."\n";
 
 		$document = JFactory::getDocument();
 		$document->addScriptDeclaration($jsVars);
+                
 		JHTML::script('facebox.js', 'components/com_virtuemart/assets/js/', false);
 		JHTML::script('vmprices.js', 'components/com_virtuemart/assets/js/', false);
 		JHTML::stylesheet('facebox.css', 'components/com_virtuemart/assets/css/', false);

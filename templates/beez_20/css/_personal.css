@@ -822,11 +822,11 @@ ul#thumbs img {
     width:105px;
     margin:5px;
 }
-#m-news{
+.m-news{
     border: solid 1px #E4E4E4;
     margin-top:30px;
 }
-#m-news > div.m-news-title{
+.m-news > div.m-news-title{
     font-family: "Didact Gothic",sans-serif;
     height:29px;
     background:#E4E4E4;
@@ -835,20 +835,20 @@ ul#thumbs img {
     padding-left:20px;
     padding-top:5px;
 }
-#m-news .category-module li,
+.m-news .category-module li,
 .m-akcii .category-module li{
     border:none;
 }
-#m-news a.mod-articles-category-title,
-#m-news a.mod-articles-category-title:link,
-#m-news a.mod-articles-category-title:active,
-#m-news a.mod-articles-category-title:hover,
-#m-news a.mod-articles-category-title:visited{
+.m-news a.mod-articles-category-title,
+.m-news a.mod-articles-category-title:link,
+.m-news a.mod-articles-category-title:active,
+.m-news a.mod-articles-category-title:hover,
+.m-news a.mod-articles-category-title:visited{
     color:#555555;
     font-size: 13px;
     text-decoration: none;
 }
-#m-news a.mod-articles-category-title:hover{
+.m-news a.mod-articles-category-title:hover{
     text-decoration: underline;
 }
 .mod-articles-category-body{
@@ -860,7 +860,7 @@ ul#thumbs img {
     color:#3994bf;
     /*font-family: SegoeUI*/
 }
-#m-news .horiz-news p{
+.m-news .horiz-news p{
     color:#555555;
     font-size:11px;
     /*Segoe UI*/
@@ -868,7 +868,7 @@ ul#thumbs img {
     line-height: 1.4em;
 }
 .m-akcii .all-news,
-#m-news .all-news{
+.m-news .all-news{
     color:#898989;
     font-size: 12px;
     /*Segoe UI*/

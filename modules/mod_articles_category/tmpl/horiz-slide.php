@@ -10,7 +10,7 @@
 defined('_JEXEC') or die;
 ?>
 
-<div id="m-news">
+<div class="m-news">
 <div class="m-news-title">
     <?php $ids = implode(',',json_decode($module->params)->catid); ?>
     <?php if($ids == "10"){ ?>

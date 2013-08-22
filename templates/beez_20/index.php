@@ -50,7 +50,8 @@ if ($this->direction == 'rtl') {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Didact+Gothic&#38;subset&#61;latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css' />    
+<!--link href='http://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css' /-->
 <link href='http://fonts.googleapis.com/css?family=Prosto+One&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300&amp;subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css' />
 <link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css' />
@@ -446,18 +447,7 @@ ul{list-style:none;margin:0;padding:0}
     var auto = true;
     var autodelay = 5;
 </script>
-<script type="text/javascript">
-    jQuery(document).ready(function(){
-        jQuery(".addtofav_button").click(function(){
-            var curform = jQuery(this).parent();
-            jQuery("form#filters").find("input:checked").each(function(i,n){
-                var name = jQuery(n).attr("name");
-                var value = jQuery(n).attr("value");
-                jQuery(curform).append("<input type='hidden' value='"+value+"' name='"+name+"' />")
-            });
-        });
-    });
-</script>
+<script type="text/javascript" src="/templates/beez_20/javascript/addtofav.js"></script>
 <script type="text/javascript" src="/templates/beez_20/javascript/slide.js"></script>
 <!-- Rating@Mail.ru counter -->
 <script type="text/javascript">//<![CDATA[
