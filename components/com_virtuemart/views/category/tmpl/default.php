@@ -232,7 +232,7 @@ if (!empty($this->products)) {
 		$span_class  = "";
 		if(in_array($product->virtuemart_product_id,$populardata)){ if(!$is_new){ $span_class = "b-hit"; } else { $span_class = "b-new";} } else { if($is_new){ $span_class = "b-new"; } }
 		if($oldprice != $price){ $span_class = "b-akc"; } ?>
-		<?php echo '<div style="display:none">'.json_encode($product).'</div>' ?>
+		<?php //echo '<div style="display:none">'.json_encode($product).'</div>' ?>
             <span class="<?php echo $span_class; ?>"></span>
 		<!--END : SPAN AKC HIT NEW-->
             <div style="margin:10px 10px 15px;text-align:center;height:30px;font-size:12px" class="vm-item-title">
@@ -279,13 +279,17 @@ if (!empty($this->products)) {
                     <div class="addtocart-bar">
                         <input type="submit" style="display:inline-block; padding-bottom:2px;" title="В корзину" value="В корзину" class="addtocart-button" name="addtocart"/>
                     </div>
-                    <input type="hidden" value="<?php echo $product->product_name; ?>" class="pname"/>
-                    <input type="hidden" value="com_virtuemart" name="option"/>
-                    <input type="hidden" value="cart" name="view"/>
-                    <!--noscript>&lt;input type="hidden" name="task" value="add" /&gt;</noscript-->
-                    <noscript><input type="hidden" name="task" value="add"/></noscript>
-                    <input type="hidden" value="<?php echo $product->virtuemart_product_id; ?>" name="virtuemart_product_id[]"/>
-                    <input type="hidden" value="<?php echo $product->virtuemart_category_id; ?>" name="virtuemart_category_id[]"/>
+                    <div>
+                        <input type="hidden" value="<?php echo $product->product_name; ?>" class="pname"/>
+                        <input type="hidden" value="com_virtuemart" name="option"/>
+                        <input type="hidden" value="cart" name="view"/>
+                        <!--noscript>&lt;input type="hidden" name="task" value="add" /&gt;</noscript-->
+                        <noscript>
+                        <div><input type="hidden" name="task" value="add"/></div>
+                        </noscript>
+                        <input type="hidden" value="<?php echo $product->virtuemart_product_id; ?>" name="virtuemart_product_id[]"/>
+                        <input type="hidden" value="<?php echo $product->virtuemart_category_id; ?>" name="virtuemart_category_id[]"/>
+                    </div>
                 </form>
             </div>
             <div class="add-to-fav" style="text-align:center;white-space:nowrap;width:250px;margin-top:5px"><?php require(JPATH_BASE.DS."components/com_wishlist/template/addtofavorites_form.tpl.php"); ?></div>

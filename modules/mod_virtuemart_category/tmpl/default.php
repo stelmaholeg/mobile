@@ -28,9 +28,10 @@ $js="jQuery(document).ready(function() {
 ?>
 
     <?php $active = JFactory::getApplication()->getMenu()->getActive();
-    if($active->alias != "home"){ ?>
-<style type="text/css">.menu-opener{top:34px}</style>
-    <?php } ?>
+    if($active->alias != "home"){ 
+        $menu_opener_style = '.menu-opener{top:34px}';
+        $document->addStyleDeclaration($menu_opener_style);
+    } ?>
 
 <div class="<?php echo $hovclass?> <?php //echo $active->alias; ?>">
     <div class="mhead">
